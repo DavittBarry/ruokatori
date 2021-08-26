@@ -8,12 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <style>
-        body {
-          background-image: url('Local Farms Where You Can Buy Produce, Meat, and More _ Family Fun in Omaha.jpeg');
-     
- background-repeat: no-repeat;
-  
-        }
+        
+        
+        
+        
         </style>
     <style> div{
         background-image: url('ruokatori dev blog header.jpeg'); 
@@ -25,11 +23,11 @@
 </head>
 <body> 
     
-
+   
     
-                    <h2 style="text-align: center;font-family: verdana; 
+                    <h2 style="text-align:center; font-family: verdana; 
                     font-size: 250%;">Ota yhteyttä/Contact us</h2>
-                    <p style="text-align: center;font-family: verdana;
+                    <p style="text-align: center;font-family: verdana; color:rgb(97, 128, 39);
                     font-size: 130%;">Thanks for visiting Ruokatori.fi.  We’d love to hear from you. 
                         Please fill out the form below or contact us directly for more information. Send email to <a href="davitt.barry@edu.taitotalo.fi"> Davitt Barry </a> or
                           <a href="aleksi.utriainen@edu.taitotalo.fi">Aleksi Utriainen</a> . 
@@ -55,13 +53,13 @@
     </div>
     
     <div class="container">
-        <form action="action_page.php">
-        <div class="section group white  ">
+        <form action="/action_page.php" target="_blank" method="get">
+        <div class="section group white">
             <div class="content-wrapper">
                 <div class="col span_2_of_2">
                     <div class="leadtext">
           <label for="fname">First Name*</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <input type="text" id="fname" name="firstname" placeholder="Your name.."> 
       
           <label for="lname">Last Name*</label>
           <input type="text" id="lname" name="lastname" placeholder="Your last name..">
@@ -69,17 +67,17 @@
           <label for="email">Email*</label>
           <input type="text" id="email" name="email-wrap" placeholder="Your email.."> 
           
- <label for="Subject">Choose a subject:</label>
+          <label for="Subject">Choose a subject:</label>
 <select id="Subject" name="Subject">
   <option value="Query">Query</option>
   <option value="Feedback">Feedback</option>
   <option value="Orders">Orders</option>
-  <option value="Get a quote">Get a quotes</option>
+  <option value="Get a quote">Get a quote</option>
   <option value="Returns">Returns</option>
 </select>
       
           <label for="Message">Message*</label>
-          <textarea id="Message" name="Message" placeholder="Write something.." style="height:200px"></textarea>
+          <textarea id="Message" name="Message" rows="10" cols="30" placeholder="Write something.." style="height:200px"></textarea>
       
           <input type="submit" value="Submit">
       
