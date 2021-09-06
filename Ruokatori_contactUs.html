@@ -1,32 +1,25 @@
 <!DOCTYPE html>
-<html lang="en"> <html lang="fi"></html>
+<html lang="en">
 <head>
     
     <link rel="stylesheet" href="Ruokatori.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <style>
-        
-        
-        
-        
-        </style>
-    <style> div{
+    <title>Contact us</title>
+    <style> div {
         background-image: url('ruokatori dev blog header.jpeg'); 
         background-repeat: no-repeat;
   background-attachment: fixed; 
-  background-size: cover;
-        </style>
+  background-size: cover;}
+    </style>
         
 </head>
 <body> 
     
    
     
-                    <h2 style="text-align:center; font-family: verdana; 
-                    font-size: 250%;">Ota yhteyttä/Contact us</h2>
+                    <h2 style="text-align:center; font-family: verdana; font-size: 250%;">Ota yhteyttä/Contact us</h2>
                     <p style="text-align: center;font-family: verdana; color:rgb(97, 128, 39);
                     font-size: 130%;">Thanks for visiting Ruokatori.fi.  We’d love to hear from you. 
                         Please fill out the form below or contact us directly for more information. Send email to <a href="davitt.barry@edu.taitotalo.fi"> Davitt Barry </a> or
@@ -36,36 +29,24 @@
 
                     </p>
                     
-                    <h2 style="text-align: center;font-family: verdana">You can also follow us on our blog: <a href="https://ruokatoridevblogi.wordpress.com">Click here to visit Ruokatori dev blog!</a> 
-                    </p> </h2>
-                    <p style="text-align: center;" 
+                    <h2 style="text-align: center;font-family: verdana">You can also follow us on our blog: <a href="https://ruokatoridevblogi.wordpress.com">Click here to visit Ruokatori dev blog!</a></h2>
                     
-                    <h2 style="text-align: center;"></h2>
-                    <p style="text-align: center;"><strong></strong><br> <br> </p>
-                    <p style="text-align: center;">
-                        
-                        <br>
-                         
-                        </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    
+                   
+                   
     <div class="container">
-        <form action="/action_page.php" target="_blank" method="get">
+        <form action="https://formspree.io/f/mdoyyakl" method="POST" id="my-form">
         <div class="section group white">
             <div class="content-wrapper">
                 <div class="col span_2_of_2">
                     <div class="leadtext">
           <label for="fname">First Name*</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name.."> 
+          <input type="text" id="fname" name="firstname" placeholder="Your name.." required> 
       
           <label for="lname">Last Name*</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
       
           <label for="email">Email*</label>
-          <input type="text" id="email" name="email-wrap" placeholder="Your email.."> 
+          <input type="text" id="email" name="email-wrap" placeholder="Your email.." required> 
           
           <label for="Subject">Choose a subject:</label>
 <select id="Subject" name="Subject">
@@ -77,11 +58,17 @@
 </select>
       
           <label for="Message">Message*</label>
-          <textarea id="Message" name="Message" rows="10" cols="30" placeholder="Write something.." style="height:200px"></textarea>
+          <textarea id="Message" name="Message" rows="10" cols="30" placeholder="Write something.." style="height:200px" required></textarea>
       
           <input type="submit" value="Submit">
-      
+        </div>
+             </div>
+                </div>
+                    </div>
         </form>
       </div>
+
+<script src="./main.js"></script>
+      
 </body>
 </html>
