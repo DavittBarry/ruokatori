@@ -1,0 +1,25 @@
+* {
+    text-align: center;
+}
+
+.bg-ruokatorigreen {
+    background-color: #A1C5A5;
+}
+
+#main {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+}
+
+@media (min-width: 576px) {
+    .container-fluid.max-width {
+        width: auto;
+        margin: 0 1rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container-fluid.max-width {
+        max-width:
+    }
+}
