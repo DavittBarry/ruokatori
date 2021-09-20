@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ruokatori</title>
+    <link rel="stylesheet" href="vendor/bootstrap-5.1.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/icons-1.5.0/bootstrap-icons.svg">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+   
+ 
+</head>
+
+
+    
+
+
+    <body class="bg-secondary">
+        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-ruokatorigreen bg-dark text">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Ruokatori</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav text-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Etusivu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tuotteet</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tuottajat</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Uutiset</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Yhteystiedostot.html">Yhteystiedostot</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Kirjaudu sisään</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Rekisteröidy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    <img src="/images/yhteistideot header.jpeg" alt="Happy farmer" 
+    height="400px" width="1230px">
+        <div class="container-fluid max-width bg-white py-3">
+        
+            <h1>Ruokatori</h1>
+            <p>Ole osa ruokailun vallankumousta!</p>
+        
+        
+    
+<main> 
+    
+                    <h2 style="text-align:center; font-family: verdana; 
+                    font-size: 250%;">Ota yhteyttä</h2>
+                    
+                    <h3 style="text-align:left; font-family: verdana; 
+                    font-size: 150%;">Meidän Tiimmi:</h3>
+                    
+                    <p style="text-align: left;font-family: verdana; color:rgb(0, 0, 0);
+                    font-size: 130%;"> 
+                   
+                    Scrum Master:<a href="aleksi.utriainen@edu.taitotalo.fi"> Aleksi Utriainen</a> <br>
+
+                    Product Owner:<a href="davitt.barry@edu.taitotalo.fi">  Davitt Barry </a> 
+                   
+                        </p>
+
+                    <h3 style="text-align:left; font-family: verdana; 
+                    font-size: 150%;">Development Team:</h3>
+
+                    <p style="text-align: left;font-family: verdana; color:rgb(0, 0, 0);
+                    font-size: 130%;"> 
+                          <a href="edvard.jacobson@edu.taitotalo.fi"> Edvard Jacobson </a><br>
+                          
+                          <a href="jere.savolainen@edu.taitotalo.fi"> Jere Savolainen</a> <br>
+                          <a href="shadab-sam.iqbal@edu.taitotalo.fi">Sam Iqbal</a>
+                        
+                        </p>
+                 
+
+                    </p>
+                    
+                   
+           
+              
+    </div>
+    
+    <div class="container" > 
+    <p style="text-align: left;font-family: verdana; color:rgb(0, 0, 0);
+    font-size: 120%;">Kiitos, että olet kiinnostunut Ruokatori.fi verkkokauppaprojektistamme.<br> 
+    Jätä meille viesti!
+
+                    </p>     
+        <form action="https://formspree.io/f/mdoyyakl" method="POST" id="my-form">
+        <div class="section group white">
+            <div class="content-wrapper">
+                <div class="col span_2_of_2">
+                    <div class="leadtext">
+                        
+          <label for="name">Nimi*</label>
+          <input type="text" id="name" name="name" maxlength="28" placeholder="koko nimesi.." required> 
+      
+          <label for="Phonenumber">Puhelinnumero*</label>
+          <input type="text" id="phonenumber" name="Puhelinnumero" maxlength="20" placeholder="Puhelinnumerosi " >
+      
+          <label for="email">Sähköpostiosoite*</label>
+          <input type="text" id="email" name="email-wrap" placeholder="Sähköpostiosoitesi.." required> 
+          
+          <label for="Subject">Aihe*</label>
+<select id="Subject" name="Subject" required>
+  <option value="Query">Kysymys</option>
+  <option value="Feedback">Palaute</option>
+  <option value="">Tilaus</option>
+  <option value="Get a quote">Tarjouspyyntö</option>
+  <option value="Returns">Reklamaatio</option>
+  <option value="Others">Muu</option>
+</select>
+      
+          <label for="Message">Viesti*</label>
+          <textarea id="Message" name="Message" rows="10" cols="30" placeholder="kirjoita tähän viestisi.." style="height:200px"></textarea required>
+            
+            
+          <input type="submit" value="Lähetä viesti">
+      
+        </form>
+      </div>
+
+
+
+</main>
+
+
+
+     <script src="vendor/bootstrap-5.1.1-dist/js/bootstrap.min.js"></script>
+     <script src="js/script.js"></script>
+      
+     
+</body>
+
+
+</html>
+<footer> 
+    Ruokatori.fi
+     </footer>
