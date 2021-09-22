@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ruokatori</title>
+    <link rel="stylesheet" href="vendor/bootstrap-5.1.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/icons-1.5.0/bootstrap-icons.svg">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-secondary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-ruokatorigreen bg-dark text">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Ruokatori</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Etusivu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tuotteet</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tuottajat</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Uutiset</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Yhteystiedostot</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Kirjaudu sisään</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Rekisteröidy</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid max-width bg-white py-3" >
+
+        <h1>Ruokatori</h1>
+        <p>Ole osa ruokailun vallankumousta!</p>
+        <div class="row" id="margin">
+            <div class="col-md order-md-last">
+                <h6>Tila luomuruokaa kotiovellesi!</h6>
+                <img src="images/Cards -tuotteet/randomveg_160x160.png">
+            </div>
+
+            <div class="col-md" id="main">
+                <h2>Mikä on Ruokatori?</h2>
+                <p>Tuoreiden luomutuotteiden ostaminen ei ole koskaan ollut näin helppoa! Pelkät luomutuotteet on helppo suodattaa näkymään, kun valitset kategorian yläreunan LUOMU-suodattimen päälle. Luomutuotteet on merkitty vihreällä LUOMU-merkillä.</p>
+            </div>
+            
+        </div>
+
+        <h2>Tuottajat</h2>
+
+        <div class="row">   
+
+            <div class="col-md-6 col-lg-3 mb-3">
+                <div class="card h-100">
+                    <img src="images/Cards -tuottajat/Pekan_perunat_card.png" class="card-img-top" alt="Pekan perunat card">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Pekan Perunat</h5>
+                        <p class="card-text">Parhaita luomuperunoita!</p>
+                        <a href="#" class="btn btn-primary mt-auto mx-auto">Tila</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 mb-3">
+                <div class="card h-100">
+                    <img src="images/Cards -tuottajat/Marjan_Marjat_card.png" class="card-img-top" alt="Marjan Marjat card">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Marjan Marjat</h5>
+                        <p class="card-text">Tuoretta marjaa!</p>
+                        <a href="#" class="btn btn-primary mt-auto mx-auto">Tila</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 mb-3">
+                <div class="card h-100">
+                    <img src="images/Cards -tuottajat/Luomu_Kartano_card.png" class="card-img-top" alt="Luomu Kartano card">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Luomu Kartano</h5>
+                        <p class="card-text">Kartanosta parhaita.</p>
+                        <a href="#" class="btn btn-primary mt-auto mx-auto">Tila</a>
+                    </div>
+                </div>
+            </div>
+            
+    </div>
+
+    <h2>Tuotteet</h2>
+
+    <div class="col-md-6 col-xl-3 mb-3">
+        <img src="images/dino_01.jpg" class="img-thumbnail" alt="Dino 01" />
+        <img src="images/dino_02.jpg" class="rounded" alt="Dino 02" />
+        <img src="images/dino_03.jpg" class="rounded-circle" alt="Dino 03" />
+    </div>
+    
+    <div class="row">
+
+        <div class="col-md-4">
+            <h2>Kirjaudu sisään</h2>
+                <form action="#" method="post">
+                    <div class="mb-3">
+                        <label for="email" class="form-label visually-hidden">Sähköposti</label>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="Sähköposti" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label visually-hidden">Salasana</label>
+                        <input type="password" id="password" name="password" class="form-control" placeholder="Salasana" />
+                    </div>
+                    <button type="submit" class="btn btn-primary mb-3">Kirjaudu sisään</button>
+                </form>
+        </div>
+    
+    </div>
+
+    <h2>Alertit</h2>
+
+    <div class="alert alert-success" role="alert">
+        Hyvin meni!
+    </div>
+
+    <div class="alert alert-warning" role="alert">
+        Ruh roh!
+    </div>
+
+    <div class="alert alert-danger" role="alert">
+        Aiiiiijjjj hemmetti!!
+    </div>
+
+    <div class="alert info-info alert-dismissible fade show" role="alert">
+        Tämän alertin voi pistää ruksista poies.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+    <h2>Modal</h2>
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Avaa modal
+    </button>
+
+    <!-- Modal -->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Vahvista formatointi</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Ouch! Älä koske...</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Peruuta</button>
+                    <button type="button" class="btn btn-primary">Anna palaa</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img src="vendor/icons-1.5.0/icons/alarm.svg" alt="Alarm" width="64" height="64" />
+    <span class="text-primary">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-alarm" viewBox="0 0 16 16">
+            <path d="M8.5 5.5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5z"/>
+            <path d="M6.5 0a.5.5 0 0 0 0 1H7v1.07a7.001 7.001 0 0 0-3.273 12.474l-.602.602a.5.5 0 0 0 .707.708l.746-.746A6.97 6.97 0 0 0 8 16a6.97 6.97 0 0 0 3.422-.892l.746.746a.5.5 0 0 0 .707-.708l-.601-.602A7.001 7.001 0 0 0 9 2.07V1h.5a.5.5 0 0 0 0-1h-3zm1.038 3.018a6.093 6.093 0 0 1 .924 0 6 6 0 1 1-.924 0zM0 3.5c0 .753.333 1.429.86 1.887A8.035 8.035 0 0 1 4.387 1.86 2.5 2.5 0 0 0 0 3.5zM13.5 1c-.753 0-1.429.333-1.887.86a8.035 8.035 0 0 1 3.527 3.527A2.5 2.5 0 0 0 13.5 1z"/>
+        </svg>
+    </span>
+    <div class="text-danger my-3">
+        <svg class="bi" width="32" height="32" fill="currentCOlor">
+            <use xlink:href="vendor/icons-1.5.0/bootstrap-icons.svg#heart-fill"/>
+        </svg>
+        <svg class="bi" width="32" height="32" fill="currentCOlor">
+            <use xlink:href="vendor/icons-1.5.0/bootstrap-icons.svg#toggles"/>
+        </svg>
+        <svg class="bi" width="32" height="32" fill="currentCOlor">
+            <use xlink:href="vendor/icons-1.5.0/bootstrap-icons.svg#shop"/>
+        </svg>
+        <i class="bi-alarm" style="font-size:2rem;"></i>
+
+        <h3 class="bi-heart-fill">
+            <i class="bi-heart-fill"></i> Testi testi...
+        </h3>
+        <button class="btn btn-danger">
+            <i class="bi-trash"></i> Tuhuo kaikki
+        </button>
+
+        <button class="btn btn-primary">
+            <i class="bi-printer"></i>
+            <span class="visually-hidden">Print</span>
+        </button>
+
+        <hr />
+
+        <h2>Tabs</h2>
+
+        <ul class="nav nav-tabs mb-3" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <h3>Eka tabi</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, culpa amet modi qui ipsum fuga repudiandae temporibus, tempore ab nesciunt quos necessitatibus minima numquam assumenda debitis harum mollitia placeat explicabo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore deleniti repellat eligendi, iste natus veritatis molestiae vitae, quidem molestias, autem error voluptas officiis reprehenderit corrupti eaque quam esse amet a.</p>
+        </div>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <h3>Terve ja kiitos kaloista</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, cum quia repudiandae fugit omnis minus minima at itaque dicta id accusamus quibusdam officiis facilis laudantium reprehenderit et porro ea obcaecati. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab rerum unde, consequatur error at id voluptate, repellat eligendi eaque in harum magni eius nam. Maxime incidunt est repellat voluptatum esse.</p>
+        </div>
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+            <h3>Jaba daba duu</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quisquam iure vel consequatur expedita, adipisci sit veniam odit fuga labore assumenda aliquid voluptatem facere, qui, eveniet velit ratione illum sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi rem sed, minima labore, ipsam provident dolorum ex qui voluptatibus quisquam laborum, dolore atque mollitia facere quo eligendi! Dolores, alias consequuntur?</p>
+        </div>
+    </div>
+
+    <h2 class="mt-5">Tooltip</h2>
+    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
+        Tooltip on top
+    </button>
+    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on right">
+        Tooltip on right
+    </button>
+    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on bottom">
+        Tooltip on bottom
+    </button>
+    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on left">
+        Tooltip on left
+    </button>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt at nostrum dolor modi molestiae ipsa, illo reiciendis quo cupiditate provident natus magni id, odit iusto nulla odio inventore quos. Cum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint consequuntur nihil, veritatis suscipit adipisci officia quasi reprehenderit voluptatibus repellat illo dolor nostrum quis amet animi rerum. Odio, provident rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ipsum voluptates voluptate aliquam consequatur enim explicabo delectus dolores sunt illum, atque ex nam quod, fugiat tenetur possimus. Harum, ratione earum.</p>
+
+    <h2>Popover</h2>
+
+    <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-placement="top" title="Huikea otsikko" data-bs-content="Ja tänne jotain.......">Togglaa popoveria</button>
+
+    <hr />
+
+    <h2>Spinner</h2>
+
+    <div class="spinner-border text-secondary" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+
+    <div class="spinner-grow text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+
+    <button class="btn btn-primary">
+        <span class="spinner-border spinner-border-sm" role="status"></span> Loading
+    </button>
+
+</div>
+<script src="vendor/bootstrap-5.1.1-dist/js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
