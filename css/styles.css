@@ -1,108 +1,109 @@
+/* kokeilen vielä css pushausta */
+
 * {
-    text-align: center;
+  text-align: center;
 }
 
 .bg-ruokatorigreen {
-    background-color: #A1C5A5;
+  background-color: #a1c5a5;
 }
 
 #main {
-    margin-bottom: 2rem;
-    padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
 }
 
 @media (min-width: 576px) {
-    .container-fluid.max-width {
-        width: auto;
-        margin: 0 1rem;
-    }
+  .container-fluid.max-width {
+    width: auto;
+    margin: 0 1rem;
+  }
 }
 
 @media (min-width: 1200px) {
-    .container-fluid.max-width {
-        max-width:
-    }
+  .container-fluid.max-width {
+    max-width: ;
+  }
 }
-
 
 /* ota yhteytta container */
-main {background-color: rgb(191, 218, 139);
-    background-image: url('../images/header_logo1.jpeg');
+main {
+  background-color: rgb(191, 218, 139);
+  background-image: url('../images/header_logo1.jpeg');
 
-    background-repeat: no-repeat;
-    
-background-size: 400px;
-    background-position:right;
-    background-attachment:inherit;
-    overflow-y: scroll;
-      padding: 1rem;
+  background-repeat: no-repeat;
+
+  background-size: 400px;
+  background-position: right;
+  background-attachment: inherit;
+  overflow-y: scroll;
+  padding: 1rem;
 }
 
-
 /* Style inputs, select elements and textareas */
-input[type=text], select, textarea{
+input[type='text'],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #056114;
+  border-radius: 20px;
+  box-sizing: border-box;
+  resize: inherit;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  float: left;
+  padding: 12px 12px 12px 0;
+
+  color: black;
+}
+
+/* Style the submit button */
+input[type='submit'] {
+  background-color: #05613f;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  float: right;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25,
+  .col-75,
+  input[type='submit'] {
     width: 100%;
-    padding: 12px;
-    border: 1px solid #056114;
-    border-radius: 20px;
-    box-sizing: border-box;
-    resize:inherit;
-    
-    
+    margin-top: 0;
   }
-  
-  /* Style the label to display next to the inputs */
-  label {
-    float: left;
-    padding: 12px 12px 12px 0;
+}
 
-    color: black;
-    
-    
-  }
-
-  /* Style the submit button */
-  input[type=submit] {
-    background-color: #05613f;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    float: right;
-  }
-  
-  /* Floating column for labels: 25% width */
-  .col-25 {
-    float: left;
-    width: 25%;
-    margin-top: 6px;
-  }
-
-  /* Floating column for inputs: 75% width */
-  .col-75 {
-    float: left;
-    width: 75%;
-    margin-top: 6px;
-  }
-
-  /* Floating column for inputs: 75% width */
-  .col-75 {
-    float: left;
-    width: 75%;
-    margin-top: 6px;
-  }
-   /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-   @media screen and (max-width: 600px) {
-    .col-25, .col-75, input[type=submit] {
-      width: 100%;
-      margin-top: 0;
-    }
-  }
-
-  /* Style the container */
-  .container { 
-    border-radius: 100;
-    background-color: rgb(100, 177, 87) ;
-    padding: 100px;
-  }
+/* Style the container */
+.container {
+  border-radius: 100;
+  background-color: rgb(100, 177, 87);
+  padding: 100px;
+}
