@@ -26,7 +26,7 @@
 
 
 /* ota yhteytta container */
-main {background-color: rgb(191, 218, 139);
+main {background-color: rgb(242,232,207,0.4);
     background-image: url('../images/header_logo1.jpeg');
 
     background-repeat: no-repeat;
@@ -103,6 +103,6 @@ input[type=text], select, textarea{
   /* Style the container */
   .container { 
     border-radius: 100;
-    background-color: rgb(100, 177, 87) ;
+    background-color: #A1C5A5; 
     padding: 100px;
   }
