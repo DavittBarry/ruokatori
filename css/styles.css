@@ -1,111 +1,442 @@
-/* kokeilen vielä css pushausta */
+/* FONTS */
 
-/* miksiköhäm tämä ei toimi ???? */
+@font-face {
+  font-family: 'Courier';
+  src: url(/css/fonts/courier_prime.woff2) format('woff2'),
+    url(/css/fonts/courier_prime.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
-* {
+@font-face {
+  font-family: 'Raleway';
+  src: url(/css/fonts/raleway-medium.woff2) format('woff2'),
+    url(/css/fonts/raleway-medium.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url(/css/fonts/raleway-mediumitalic.woff2) format('woff2'),
+    url(/css/fonts/raleway-mediumitalic.woff) format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url(/css/fonts/raleway-light.woff2) format('woff2'),
+    url(/css/fonts/raleway-light.woff) format('woff');
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url(/css/fonts/raleway-bold.woff2) format('woff2'),
+    url(/css/fonts/raleway-bold.woff) format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(/css/fonts/montserratalternates-bold.woff2) format('woff2'),
+    url(/css/fonts/montserratalternates-bold.woff) format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* ROOT */
+
+:root {
+  --bs-blue: #1a5dad;
+  --bs-primary: #1a5dad;
+  --bs-primary-rgb: 161, 197, 165;
+}
+
+/* ELEMENTS */
+
+body {
+  background-color: #fff;
+  color: #fff;
+  font-family: 'courier', 'sans-serif';
+}
+
+body.menu-open {
+  /* Estää pystysuuntaisen skrollaamisen, jos menu on auki*/
+  overflow-y: hidden;
+}
+
+p {
+  color: #000;
+}
+
+a {
+  color: #1a5dad;
+  text-decoration: none;
+}
+.spot-image {
+  opacity: 0.7;
+}
+.spot-image:hover {
+  opacity: 1;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #0aff37;
+  font-family: 'Raleway', 'sans-serif';
+  font-weight: bold;
+}
+
+h2,
+h3 {
+  text-transform: uppercase;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+footer a,
+footer a:hover,
+footer a:active {
+  color: #fff;
+}
+
+/* CLASSES  */
+
+.container-fluid.max-width {
+  max-width: 1150px;
+}
+
+.btn {
+  text-transform: uppercase;
+  color: #000;
+}
+
+.btn:hover {
+  text-decoration: none;
+  background-color: #e1ff5c;
+  border: 1px solid #e1ff5c;
+  color: black;
+}
+
+.btn-primary,
+.btn-group .btn-primary.active {
+  background-color: #bda88c;
+  border-color: #bda88c;
+}
+
+.btn-group .btn:not(.active) {
+  /* vaikuttaa kaikkiin paitsi aktiivisiin */
+  opacity: 0.5;
+}
+
+.btn,
+.form-control {
+  padding: 0.5rem 0.75rem;
+  border-radius: 50;
+}
+
+.languages {
+  position: absolute;
+  top: 0;
+  left: -100%;
+
+  transition: left 0.5s;
+  z-index: 9999;
+}
+
+body.menu-open .languages {
+  left: 0;
+}
+
+.languages .btn {
+  font-size: 2.25rem;
+}
+
+.main1kuva {
+  width: 100%;
+  height: auto;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  bottom: 0;
+  width: 100%;
   text-align: center;
+  padding: 0;
+  z-index: 9990;
+  transition: left 0.5s;
 }
 
-.bg-ruokatorigreen {
-  background-color: #a1c5a5;
+body.menu-open .navbar {
+  left: 0;
 }
 
-#main {
-  margin-bottom: 2rem;
-  padding-bottom: 2rem;
+.navbar-nav .nav-link {
+  font-family: 'Raleway', 'sans-serif';
+  font-size: 2.5rem;
+  text-transform: uppercase;
 }
 
-@media (min-width: 576px) {
-  .container-fluid.max-width {
-    width: auto;
-    margin: 0 1rem;
+.navbar-nav .nav-link:hover {
+  text-decoration: none;
+}
+
+.carousel-indicators [data-bs-target] {
+  /* karusellin laatikoista ympyröitä */
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+}
+
+.carousel-img {
+  /* carousellin image mobiiliin */
+  background-size: cover;
+  background-position: center;
+  padding-top: 100%;
+}
+
+.carousel-caption {
+  bottom: auto; /* Keskitetään karusellin teksti*/
+  top: 50%; /* Keskitetään karusellin teksti*/
+  transform: translateY(-50%); /* Keskitetään karusellin teksti*/
+  font-family: 'Montserrat', 'sans-serif';
+  color: #e1ff5c;
+  font-size: 7rem;
+  text-shadow: 0 0 10px rgb(85, 83, 83);
+  line-height: 1.25;
+}
+
+.carousel-caption-under {
+  font-family: 'Raleway', 'Sans-serif';
+  font-size: 3rem;
+}
+
+/* ID:S */
+
+#menuBtn {
+  position: absolute;
+  top: 1rem;
+  right: 0.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: transparent;
+  border: none;
+  padding: 0; /* Buttonissa oletuksena paddingia */
+  z-index: 9999;
+}
+
+#menuBtn .menu-btn-bar {
+  position: absolute;
+  left: 0;
+  display: block; /* Koska SPAN on inline!! Diveillä taas ei ois tarvinnu */
+  width: 100%;
+  height: 6px;
+  background-color: #e1ff5c;
+  border-radius: 0.125rem;
+  transition: opacity 0.25s, top 0.25s, bottom 0.25s, transform 0.25s;
+  /* transition: all .25s toimisi myös */
+}
+
+#menuBtn .menu-btn-bar:first-child {
+  top: 2px;
+}
+
+#menuBtn .menu-btn-bar:nth-child(2),
+#menuBtn .menu-btn-bar:nth-child(3) {
+  top: 50%;
+  margin-top: -3px;
+}
+
+#menuBtn .menu-btn-bar:last-child {
+  bottom: 2px;
+}
+
+body.menu-open #menuBtn .menu-btn-bar:first-child {
+  top: -6px;
+  opacity: 0;
+}
+
+body.menu-open #menuBtn .menu-btn-bar:last-child {
+  bottom: -6px;
+  opacity: 0;
+}
+
+body.menu-open #menuBtn .menu-btn-bar:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+body.menu-open #menuBtn .menu-btn-bar:nth-child(3) {
+  transform: rotate(-45deg);
+}
+/* MEDIA  */
+
+@media (max-width: 576px) {
+  .main-1-kuva {
+    width: 650px;
+    height: auto;
+  }
+
+  .sl-image {
+    width: 650px;
+    height: auto;
+  }
+}
+
+@media (min-width: 280px) {
+  .main-1-kuva {
+    width: 650px;
+    height: auto;
+  }
+
+  .sl-image {
+    width: 650px;
+    height: auto;
+  }
+
+  .carousel-caption {
+    bottom: auto; /* Keskitetään karusellin teksti*/
+    top: 50%; /* Keskitetään karusellin teksti*/
+    transform: translateY(-50%); /* Keskitetään karusellin teksti*/
+    font-family: 'Montserrat', 'sans-serif';
+    color: #e1ff5c;
+    font-size: 2rem;
+    text-shadow: 0 0 10px rgb(85, 83, 83);
+    line-height: 1.25;
+  }
+
+  .carousel-caption-under {
+    font-family: 'Raleway', 'Sans-serif';
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 320px) {
+  .main-1-kuva {
+    width: 650px;
+    height: auto;
+  }
+
+  .sl-image {
+    width: 650px;
+    height: auto;
+  }
+
+  .carousel-caption {
+    bottom: auto; /* Keskitetään karusellin teksti*/
+    top: 50%; /* Keskitetään karusellin teksti*/
+    transform: translateY(-50%); /* Keskitetään karusellin teksti*/
+    font-family: 'Montserrat', 'sans-serif';
+    color: #e1ff5c;
+    font-size: 3rem;
+    text-shadow: 0 0 10px rgb(85, 83, 83);
+    line-height: 1.25;
+  }
+
+  .carousel-caption-under {
+    font-family: 'Raleway', 'Sans-serif';
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 568px) {
+  .carousel-caption {
+    bottom: auto; /* Keskitetään karusellin teksti*/
+    top: 50%; /* Keskitetään karusellin teksti*/
+    transform: translateY(-50%); /* Keskitetään karusellin teksti*/
+    font-family: 'Montserrat', 'sans-serif';
+    color: #e1ff5c;
+    font-size: 5rem;
+    text-shadow: 0 0 10px rgb(85, 83, 83);
+    line-height: 1.25;
+  }
+
+  .carousel-caption-under {
+    font-family: 'Raleway', 'Sans-serif';
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .languages {
+    position: static;
+    margin: 1.25rem 0;
+  }
+  .languages .btn {
+    font-size: 1rem;
+  }
+  .navbar {
+    position: relative;
+    left: 0;
+  }
+  .navbar-nav .nav-link {
+    font-size: 1.125rem;
+  }
+  .carousel-img {
+    padding-top: 40%;
+  }
+}
+
+@media (min-width: 992px) {
+  .carousel-img {
+    padding-top: 25%;
+  }
+
+  .sl-image {
+    width: 650px;
+    height: auto;
+  }
+
+  .main-1-kuva {
+    width: 650px;
+    height: auto;
   }
 }
 
 @media (min-width: 1200px) {
-  .container-fluid.max-width {
-    max-width: ;
+  .carousel-img {
+    padding-top: 25%;
   }
-}
 
-/* ota yhteytta container */
-main {
-  background-color: rgb(191, 218, 139);
-  background-image: url('../images/header_logo1.jpeg');
-
-  background-repeat: no-repeat;
-
-  background-size: 400px;
-  background-position: right;
-  background-attachment: inherit;
-  overflow-y: scroll;
-  padding: 1rem;
-}
-
-/* Style inputs, select elements and textareas */
-input[type='text'],
-select,
-textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #056114;
-  border-radius: 20px;
-  box-sizing: border-box;
-  resize: inherit;
-}
-
-/* Style the label to display next to the inputs */
-label {
-  float: left;
-  padding: 12px 12px 12px 0;
-
-  color: black;
-}
-
-/* Style the submit button */
-input[type='submit'] {
-  background-color: #05613f;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 20px;
-  cursor: pointer;
-  float: right;
-}
-
-/* Floating column for labels: 25% width */
-.col-25 {
-  float: left;
-  width: 25%;
-  margin-top: 6px;
-}
-
-/* Floating column for inputs: 75% width */
-.col-75 {
-  float: left;
-  width: 75%;
-  margin-top: 6px;
-}
-
-/* Floating column for inputs: 75% width */
-.col-75 {
-  float: left;
-  width: 75%;
-  margin-top: 6px;
-}
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .col-25,
-  .col-75,
-  input[type='submit'] {
-    width: 100%;
-    margin-top: 0;
+  .sl-image {
+    width: 650px;
+    height: auto;
   }
-}
 
-/* Style the container */
-.container {
-  border-radius: 100;
-  background-color: rgb(100, 177, 87);
-  padding: 100px;
+  .main-1-kuva {
+    width: 650px;
+    height: auto;
+  }
+
+  .carousel-caption {
+    bottom: auto; /* Keskitetään karusellin teksti*/
+    top: 50%; /* Keskitetään karusellin teksti*/
+    transform: translateY(-50%); /* Keskitetään karusellin teksti*/
+    font-family: 'Montserrat', 'sans-serif';
+    color: #e1ff5c;
+    font-size: 9rem;
+    text-shadow: 0 0 10px rgb(85, 83, 83);
+    line-height: 1.25;
+  }
+
+  .carousel-caption-under {
+    font-family: 'Raleway', 'Sans-serif';
+    font-size: 3rem;
+  }
 }
