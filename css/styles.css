@@ -56,6 +56,10 @@
   --bs-primary-rgb: 161, 197, 165;
 }
 
+/* .bg-gradient {
+  background-color: #0aff37 !important;
+} */
+
 /* ELEMENTS */
 
 body {
@@ -150,6 +154,12 @@ footer a:active {
   border-radius: 50;
 }
 
+.card-image img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
 .languages {
   position: absolute;
   top: 0;
@@ -191,7 +201,10 @@ body.menu-open .navbar {
 .navbar-nav .nav-link {
   font-family: 'Raleway', 'sans-serif';
   font-size: 2.5rem;
+  font-weight: bold;
   text-transform: uppercase;
+  /* text-shadow: 0 0 10px #333333; */
+  color: #fff !important;
 }
 
 .navbar-nav .nav-link:hover {
@@ -217,7 +230,7 @@ body.menu-open .navbar {
   top: 50%; /* Keskitetään karusellin teksti*/
   transform: translateY(-50%); /* Keskitetään karusellin teksti*/
   font-family: 'Montserrat', 'sans-serif';
-  color: #e1ff5c;
+  color: #0aff37;
   font-size: 7rem;
   text-shadow: 0 0 10px rgb(85, 83, 83);
   line-height: 1.25;
