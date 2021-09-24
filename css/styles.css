@@ -154,6 +154,12 @@ footer a:active {
   border-radius: 50;
 }
 
+.card-image img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
 .languages {
   position: absolute;
   top: 0;
