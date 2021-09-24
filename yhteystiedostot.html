@@ -1,187 +1,179 @@
+
 <!DOCTYPE html>
-<html lang="fi">
+<html lang="en">
 <head>
-    
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ruokatori</title>
-    <link rel="stylesheet" href="vendor/bootstrap-5.1.1-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="vendor/icons-1.5.0/bootstrap-icons.svg">
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
-   
- 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/vendor/bootstrap-5.1.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Ruokatori - Yhteystiedot</title>
 </head>
-
-
-    
-
-
-    <body class="bg-secondary">
-        
-           <div
-        class="
-          container-fluid
-          max-width
-          d-flex
-          justify-content-between
-          align-items-start
-        "
-      >
-       
-        <button type="button" id="menuBtn" class="d-md-none">
-          <div class="menu-btn-icon">
-            <!-- Voisi olla myös divei -->
-            <span class="menu-btn-bar"></span>
-            <span class="menu-btn-bar"></span>
-            <span class="menu-btn-bar"></span>
-            <span class="menu-btn-bar"></span>
-          </div>
-          <span class="visually-hidden">Toggle menu</span>
-        </button>
+</head>
+</head>
+<body>
+    <div class="
+      container-fluid
+      max-width
+      d-flex
+      justify-content-between
+      align-items-start
+    ">
+   
+    <button type="button" id="menuBtn" class="d-md-none">
+      <div class="menu-btn-icon">
+        <!-- Voisi olla myös divei -->
+        <span class="menu-btn-bar"></span>
+        <span class="menu-btn-bar"></span>
+        <span class="menu-btn-bar"></span>
+        <span class="menu-btn-bar"></span>
       </div>
+      <span class="visually-hidden">Toggle menu</span>
+    </button>
+  </div>
 
-      <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-gradient" >
-        <div class="container-fluid max-width">
-          <!-- button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button -->
-          <!-- div class="collapse navbar-collapse" id="navbarNav" -->
-          
-          <ul class="navbar-nav justify-content-between w-100">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Etusivu</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="tuotteet.html">Tuotteet</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Tuottajat</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="uutiset.html">Uutiset</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="yhteystiedostot.html">Yhteystiedot</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="About us.html">About us</a>
-            </li>
-            <div class="navbar-nav justify-content-end">
-            <li class="nav-item">
-              <a class="nav-link" href="kirjaudu.html">Kirjaudu sisään</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="rekisteröidy.html">Rekisteröidy</a>
-            </li>
+  <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+    <div class="container-fluid max-width">
+      <!-- button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button -->
+      <!-- div class="collapse navbar-collapse" id="navbarNav" -->
+      
+      <ul class="navbar-nav justify-content-between w-100">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Etusivu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Tuotteet</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Tuottajat</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Uutiset</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Yhteystiedot</a>
+        </li>
+        <div class="navbar-nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Kirjaudu sisään</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Rekisteröidy</a>
+        </li>
+      </div>
+      </ul>
+      <!-- /div -->
+    </div>
+    <!-- /.container-fluid -->
+         </nav>
+    
+    <section>
+    <div id="mainCarousel" class="carousel slide mb-5 pointer-event" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      
+      
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        
+        <div class="carousel-img" style="background-image: url(/images/tuotteet\ Header.jpeg)"></div>
+        <div class="carousel-caption">
+          Ruokatori <br>
+          <div class="carousel-caption-under">
+           Yhteystiedot
           </div>
-          </ul>
-          <!-- /div -->
+          
         </div>
-        <!-- /.container-fluid -->
-      </nav>
-
-    <img src="/images/yhteistideot header.jpeg" alt="Happy farmer" 
-  style="height:400px;width:1230px;">
-        <div class="container-fluid max-width bg-white py-3">
-        
-            <h1>Ruokatori</h1>
-            <p>Ole osa ruokailun vallankumousta!</p>
-        
-        
-    
-<main> 
-    
-                    <h2 style="text-align:center; font-family: verdana; 
-                    font-size: 250%;">Ota yhteyttä</h2>
-                    
-                    <h3 style="text-align:left; font-family: verdana; 
-                    font-size: 150%;">Meidän Tiimmi:</h3>
-                    
-                    <p style="text-align: left;font-family: verdana; color:rgb(0, 0, 0);
-                    font-size: 130%;"> 
-                   
-                    Scrum Master:<a href="aleksi.utriainen@edu.taitotalo.fi"> Aleksi Utriainen</a> <br>
-
-                    Product Owner:<a href="davitt.barry@edu.taitotalo.fi">  Davitt Barry </a> 
-                   
-                        </p>
-
-                    <h3 style="text-align:left; font-family: verdana; 
-                    font-size: 150%;">Development Team:</h3>
-
-                    <p style="text-align: left;font-family: verdana; color:rgb(0, 0, 0);
-                    font-size: 130%;"> 
-                          <a href="edvard.jacobson@edu.taitotalo.fi"> Edvard Jacobson </a><br>
-                          
-                          <a href="jere.savolainen@edu.taitotalo.fi"> Jere Savolainen</a> <br>
-                          <a href="shadab-sam.iqbal@edu.taitotalo.fi">Sam Iqbal</a>
-                        
-                        </p>
-                 
-
-                    </p>
-                    
-                   
-           
-              
     </div>
     
-    <div class="container" > 
-    <p style="text-align: left;font-family: verdana; color:rgb(0, 0, 0);
-    font-size: 120%;">Kiitos, että olet kiinnostunut Ruokatori.fi verkkokauppaprojektistamme.<br> 
-    Jätä meille viesti!
-
-                    </p>     
-        <form action="https://formspree.io/f/mdoyyakl" method="POST" id="my-form">
-        <div class="section group white">
-            <div class="content-wrapper">
-                <div class="col span_2_of_2">
-                    <div class="leadtext">
-                        
-          <label for="name">Nimi*</label>
-          <input type="text" id="name" name="name" maxlength="28" placeholder="koko nimesi.." required> 
-      
-          <label for="Phonenumber">Puhelinnumero*</label>
-          <input type="text" id="phonenumber" name="Puhelinnumero" maxlength="20" placeholder="Puhelinnumerosi " >
-      
-          <label for="email">Sähköpostiosoite*</label>
-          <input type="text" id="email" name="email-wrap" placeholder="Sähköpostiosoitesi.." required> 
-          
-          <label for="Subject">Aihe*</label>
-<select id="Subject" name="Subject" required>
-  <option value="Query">Kysymys</option>
-  <option value="Feedback">Palaute</option>
-  <option value="">Tilaus</option>
-  <option value="Get a quote">Tarjouspyyntö</option>
-  <option value="Returns">Reklamaatio</option>
-  <option value="Others">Muu</option>
-</select>
-      
-          <label for="Message">Viesti*</label>
-          <textarea id="Message" name="Message" rows="10" cols="30" placeholder="kirjoita tähän viestisi.." style="height:200px"></textarea required>
-            
-            
-          <input type="submit" value="Lähetä viesti">
-      
-        </form>
       </div>
+    </div>
+    </section>
 
+    <div class="container-fluid max-width">
+            <div class="row">
+                <div class="col-md-8">
+                    <h2 class="mb-4">Ota yhteyttä</h2>
+                    <h4 class="mb-3">Meidän Timii:</h4>
+                    <p> 
+                    Scrum Master:<a href="aleksi.utriainen@edu.taitotalo.fi"> Aleksi Utriainen</a> <br>
+                    Product Owner:<a href="davitt.barry@edu.taitotalo.fi">  Davitt Barry </a> 
+                    </p>
+                    <h3">Development Team:
+                    <p class="mb-5"> 
+                            <a href="edvard.jacobson@edu.taitotalo.fi"> Edvard Jacobson </a><br>
+                            <a href="jere.savolainen@edu.taitotalo.fi"> Jere Savolainen</a> <br>
+                            <a href="shadab-sam.iqbal@edu.taitotalo.fi">Sam Iqbal</a>
+                    </p>
+                      
+                    <p>Kiitos, että olet kiinnostunut Ruokatori.fi verkkokauppaprojektistamme<br> 
+                        <br>
+                    Jätä meille viesti!</p>
+                </h3"></div>
+  
+             <div class="col-md-4 d-flex flex-column mb-5 ">
+              <img src="/images/otayhteytta.jpeg" alt="ruokatori kuva parsa" class="main-1-kuva" width="286.44" height="429">
+             </div>
 
+            
+          </div>
+          <!--roww-->
+          <div class="row mb-5">
+                
+        </div> <!-- Row -->
 
-</main>
+          
+    </div> <!-- Container fluid -->
+    
+    
 
-
-
-     <script src="vendor/bootstrap-5.1.1-dist/js/bootstrap.min.js"></script>
-     <script src="js/script.js"></script>
-      
-     
+ <footer class="bg-primary text-center py-4">
+        <div class="container-fluid max-width">
+          <div class="row">
+            <div class="col-md text-md-start">
+              <h3 class="text-white">Yhteystiedot</h3>
+              <address>
+                Ruokatorikatu 4<br>
+                00100 Helsinki<br>
+                Finland<br>
+                <br>
+                Tel. +358 40 123 1234<br>
+                Email: ruokatori@info.com
+              </address>
+            </div>
+            <div class="col-md text-md-end">
+              <ul class="list-unstyled">
+                <li><a href="#">Etusivu</a></li>
+                <li><a href="#"> Tuotteet</a></li>
+                <li><a href="#">Tuottajat</a></li>
+                <li><a href="#">Uutiset</a></li>
+                <li><a href="#">Yhteystiedot</a></li>
+              </ul>
+            </div>
+          </div>
+          <!--row-->
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <a href="#" target="_blank"><img src="/images/icon-facebook.svg" width="48" height="48" alt="Facebook"></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" target="_blank"><img src="/images/icon-instagram.svg" width="48" height="48" alt="Instagram"></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" target="_blank"><img src="/images/icon-twitter.svg" width="48" height="48" alt="Twitter"></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" target="_blank"><img src="/images/icon-pinterest.svg" width="48" height="48" alt="Pinterest"></a>
+            </li>
+          </ul>
+        </div>
+        <!--container fluid-->
+    </footer>
+    <script src="/vendor/bootstrap-5.1.1-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/script.js"></script>
 </body>
-
-
 </html>
-<footer> 
-    Ruokatori.fi
-     </footer>
