@@ -68,13 +68,18 @@ body {
   font-family: 'courier', 'sans-serif';
 }
 
+
+
 body.menu-open {
   /* Estää pystysuuntaisen skrollaamisen, jos menu on auki*/
   overflow-y: hidden;
 }
 
 p {
+  font-family: 'Raleway', 'sans-serif';
   color: #000;
+  font-weight:500;
+
 }
 
 a {
