@@ -102,7 +102,7 @@
                     Scrum Master:<a href="aleksi.utriainen@edu.taitotalo.fi"> Aleksi Utriainen</a> <br>
                     Product Owner:<a href="davitt.barry@edu.taitotalo.fi">  Davitt Barry </a> 
                     </p>
-                    <h3">Development Team:
+                    <h4>Development Team:</h4>
                     <p class="mb-5"> 
                             <a href="edvard.jacobson@edu.taitotalo.fi"> Edvard Jacobson </a><br>
                             <a href="jere.savolainen@edu.taitotalo.fi"> Jere Savolainen</a> <br>
@@ -112,13 +112,16 @@
                     <p>Kiitos, että olet kiinnostunut Ruokatori.fi verkkokauppaprojektistamme<br> 
                         <br>
                     Jätä meille viesti!</p>
-                </h3"></div>
-  
+                </div>
+
+        
              <div class="col-md-4 d-flex flex-column mb-5">
               <img src="/images/yhteystiedot.jpeg" alt="ruokatori kuva parsa" class="main-1-kuva" width="286.44" height="429">
              </div>
 
             
+             
+
           </div>
           <!--roww-->
           <div class="row mb-5">
@@ -127,8 +130,52 @@
 
           
     </div> <!-- Container fluid -->
+   
     
     
+   
+    
+    <form>
+      <div class="form-group " style="padding: 2px 3rem;">
+        
+        <label for="name"><p>Nimi*</p> </label> 
+        <input id="name" name="name" placeholder="Koko nimesi.." type="text" aria-describedby="nameHelpBlock" 
+        required="required" class="form-control"> 
+        <span id="nameHelpBlock" class="form-text text-muted"><p>*Pakkolinen kenttä</p></span>
+      </div>
+      <div class="form-group" style="padding: 2px 3rem;">
+        <label for="phone number"><p>Puhelinnumero</p></label> 
+        <input id="phone number" name="phone number" placeholder="Puhelinnumerosi.." type="text" class="form-control">
+      </div>
+      <div class="form-group" style="padding: 10px 3rem;">
+        <label for="email address"><p>Sähköpostiosoite*</p></label> 
+        <input id="email address" name="email address" placeholder="Sähköpostiosoitesi.." type="text" required="required" class="form-control">
+      </div>
+      <div class="form-group" style="padding: 2px 3rem;">
+        <label for="Subject"><p>Aihe*</p></label> 
+        <div>
+          <select id="Subject" name="Subject" required="required" class="custom-select">
+            <option value="Query">Kysymys</option>
+            <option value="Feedback">Palaute</option>
+            <option value="Orders">Tilaus</option>
+            <option value="Get a quote">Tarjouspyyntö</option>
+            <option value="Returns">Reklamaatio</option>
+            <option value="Others">Muu</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group" style="padding: 2px 3rem;">
+        <label for="Message">Viesti*</label> 
+        <textarea id="Message" name="Message" cols="40" rows="10" required="required" class="form-control"></textarea>
+      </div> 
+      <div class="form-group" style= "padding: 2px 3rem;">
+        <button name="submit" type="submit" class="btn btn-primary">Lähetä</button>
+      </div>
+    </form>
+
+
+
+
 
  <footer class="bg-primary text-center py-4">
         <div class="container-fluid max-width">
