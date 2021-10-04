@@ -2,32 +2,32 @@
 
 @font-face {
   font-family: 'Courier';
-  src: url(/css/fonts/courier_prime.woff2) format('woff2'),
-    url(/css/fonts/courier_prime.woff) format('woff');
+  src: url(css/fonts/courier_prime.woff2) format('woff2'),
+    url(css/fonts/courier_prime.woff) format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Raleway';
-  src: url(/css/fonts/raleway-medium.woff2) format('woff2'),
-    url(/css/fonts/raleway-medium.woff) format('woff');
+  src: url(css/fonts/raleway-medium.woff2) format('woff2'),
+    url(css/fonts/raleway-medium.woff) format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Raleway';
-  src: url(/css/fonts/raleway-mediumitalic.woff2) format('woff2'),
-    url(/css/fonts/raleway-mediumitalic.woff) format('woff');
+  src: url(css/fonts/raleway-mediumitalic.woff2) format('woff2'),
+    url(css/fonts/raleway-mediumitalic.woff) format('woff');
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Raleway';
-  src: url(/css/fonts/raleway-light.woff2) format('woff2'),
-    url(/css/fonts/raleway-light.woff) format('woff');
+  src: url(css/fonts/raleway-light.woff2) format('woff2'),
+    url(css/fonts/raleway-light.woff) format('woff');
   font-weight: lighter;
   font-style: normal;
 }
