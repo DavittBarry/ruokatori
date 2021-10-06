@@ -1,56 +1,66 @@
 <!DOCTYPE html>
 <html lang="fi">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ruokatori</title>
-    <link rel="stylesheet" href="vendor/bootstrap-5.1.1-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="vendor/icons-1.5.0/bootstrap-icons.svg">
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="vendor/bootstrap-5.1.1-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Ruokatori - Rekisteröidy</title>
+  </head>
 <body class="bg-secondary">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-ruokatorigreen bg-dark text">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Ruokatori</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav text-center">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Etusivu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Tuotteet</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Tuottajat</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Uutiset</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Yhteystiedostot</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link">Kirjaudu sisään</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link">Rekisteröidy</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+  <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-gradient" >
+    <div class="container-fluid max-width">
+      <!-- button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button -->
+      <!-- div class="collapse navbar-collapse" id="navbarNav" -->
+      
+      <ul class="navbar-nav justify-content-between w-100">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Etusivu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="tuotteet.html">Tuotteet</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Tuottajat</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="uutiset.html">Uutiset</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="yhteystiedot.html">Yhteystiedot</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="aboutus.html">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="kirjaudu.html">Kirjaudu sisään</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="rekisteröidy.html">Rekisteröidy</a>
+        </li>
+      </div>
+      </ul>
+      <!-- /div -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
 
-    <div class="container max-width bg-white py-3" >
-        <img src="/images/logo-leaf.svg">
+    <div class="container max-width bg-white py-3">
+      <img src="/images/logo-leaf.svg" alt="logo">
+      <div class="d-flex justify-content-center">
+        
         <h1>Tervetuloa Ruokatoriin!</h1>
+       
+      </div>
         <div class="row">
             
-                <h2>Rekisteröidy käyttäjäksi</h2>
+                <h4>Rekisteröidy käyttäjäksi</h4>
                 <form>
                     <div class="form-row">
                         <div class="form-group col-sm-6">
@@ -62,12 +72,12 @@
                       <input id="sname" name="sname" placeholder="Sukunimi" type="text" required="required" class="form-control">
                     </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group col-sm-6">
                       <label for="age">Syntymäaika</label> 
                       <input id="age" name="age" placeholder="Syntymäaika" type="text" class="form-control">
                     </div>
-                    <div class="form-group">
-                      <label for="sukupuoli">Sukupuoli</label> 
+                    <div class="form-group col-sm-6">
+                      <label for="gender">Sukupuoli</label> 
                       <div>
                         <div class="form-check form-check-inline">
                           <input name="radio" id="radio_0" type="radio" required="required" class="form-check-input" value="Nainen"> 
