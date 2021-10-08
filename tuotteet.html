@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="/vendor/bootstrap-5.1.1-dist/css/bootstrap.min.css"
+      href="vendor/bootstrap-5.1.1-dist/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Ruokatori - Tuotteet</title>
   </head>
   <body>
@@ -34,7 +34,7 @@
         </button>
       </div>
 
-      <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+      <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-gradient" >
         <div class="container-fluid max-width">
           <!-- button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -55,17 +55,17 @@
               <a class="nav-link" href="uutiset.html">Uutiset</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="yhteystiedot.html">Yhteystiedot</a>
+              <a class="nav-link" href="yhteystiedostot.html">Yhteystiedot</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="aboutus.html">About us</a>
+              <a class="nav-link" href="aboutUs.html">About Us</a>
             </li>
             <div class="navbar-nav justify-content-end">
             <li class="nav-item">
-              <a class="nav-link" href="#">Kirjaudu sisään</a>
+              <a class="nav-link" href="kirjaudu.html">Kirjaudu sisään</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Rekisteröidy</a>
+              <a class="nav-link" href="rekisteröidy.html">Rekisteröidy</a>
             </li>
           </div>
           </ul>
@@ -76,65 +76,65 @@
     </header>
 
     <main>
-        <div
-        id="mainCarousel"
-        class="carousel slide mb-5"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#mainCarousel"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          
-          
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            
-            <div
-              class="carousel-img"
-     style="background-image: url(/images/tuotteet\ Header.jpeg)"
-            ></div>
-            <div class="carousel-caption">
-              Ruokatori <br />
-              <div class="carousel-caption-under">
-               Tuotteet
-              </div>
-              
-            </div>
-        </div>
-        
-          </div>
-        </div>
-       
 
-      <div class="container-fluid max-width">
+      <!-- Background image -->
+  <div
+  class="p-5 text-center bg-image"
+  style="
+    background-image: url('/images/tuotteet\ Header.jpeg');
+    background-size:cover;height: 500px; background-repeat: no-repeat;
+    margin-top:auto;
+  "
+>
+  
+      <div class="text-white">
+        <h1 class="mb-3">Ruokatori</h1>
+        <h4 class="mb-3">Tietomeistä</h4>
+       
+      
+   
+  
+</div>
+
+<!-- Background image -->
+        </div>
+    </div>
+    
+      </div>
+    </div>
+  </header>
+   
+    </main>
+
+    <main>
+      
+      <div class="container-fluid max-width" style="margin-top:60px;">
+        
+        
         <div class="row">
-          
+
           <div class="col-md-8">
             <h2 class="mb-3">Infoa tuotteista</h2>
+            
             <p>
                 Miten tilaat jne. Tuoreiden luomutuotteiden ostaminen ei ole koskaan ollut näin helppoa! 
                 
+              Ruokatori on palvelu, jonka tarkoitus on tuoda kuluttajat ja
+              lähituottajat yhteen.
             </p>
             <p>
                 Pelkät luomutuotteet on helppo suodattaa näkymään, kun valitset kategorian 
                 yläreunan LUOMU-suodattimen päälle. 
                 Luomutuotteet on merkitty vihreällä LUOMU-merkillä.
+              Tuoreiden luomutuotteiden ostaminen ei ole koskaan ollut näin
+              helppoa! Pelkät luomutuotteet on helppo suodattaa näkymään, kun
+              valitset kategorian yläreunan LUOMU-suodattimen päälle.
+              Luomutuotteet on merkitty vihreällä LUOMU-merkillä.
             </p>
-            
 
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum
-              distinctio impedit obcaecati quidem. Sint nostrum obcaecati quo
-              dolorem perspiciatis harum nobis, quia, dolor et ducimus,
-              assumenda ullam quaerat ipsum a.
-            </p>
+            <p>Mullistetaan yhdessä ruokailun kulttuuria.</p>
+
+            
 
             <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum
@@ -142,14 +142,19 @@
                 dolorem perspiciatis harum nobis, quia, dolor et ducimus,
                 assumenda ullam quaerat ipsum a.
               </p>
-  
-        
+
+
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates provident ex doloribus eligendi maxime facilis magni
+              quis consequuntur eaque eos?
+            </p>
           </div>
 
           <div class="col-md-4 d-flex flex-column mb-5 ">
             <img
-              src="images/tuotteetMain.jpeg"
+              src="/images/tuotteetMain.jpeg"
               alt="ruokatori kauppatori"
+             
               class="main-1-kuva"
               width="286.44"
               height="429"
@@ -159,13 +164,13 @@
 
         <!--roww-->
 
-        <h2 >Paikkakuntasi: Helsinki</h2>
+        <h2 style="margin: 50px;">Paikkakuntasi: Helsinki</h2>
 
         <div class="row">   
 
             <div class="col-md-6 col-lg-3 mb-3">
-                <div class="card h-100 card-image ">
-                    <img src="images/Cards -tuottajat/Pekan_perunat_card.png" class="card-img-top"  alt="Pekan perunat card" >
+                <div class="card h-100 card-image">
+                    <img src="images/Cards -tuottajat/Pekan_perunat_card.png" class="card-img-top" alt="Pekan perunat card" >
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title">Pekan Perunat</h5>
                         <p class="card-text">Parhaita luomuperunoita!</p>
@@ -175,8 +180,8 @@
             </div>
 
             <div class="col-md-6 col-lg-3 mb-3">
-                <div class="card h-100 card-image text-center d-flex flex-column">
-                    <img src="images/Cards -tuottajat/Marjan_Marjat_card.png" class="card-img-top"  alt="Marjan Marjat card">
+                <div class="card h-100 card-image">
+                    <img src="images/Cards -tuottajat/Marjan_Marjat_card.png" class="card-img-top" alt="Marjan Marjat card">
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title">Marjan Marjat</h5>
                         <p class="card-text">Tuoretta marjaa!</p>
@@ -187,7 +192,7 @@
 
             <div class="col-md-6 col-lg-3 mb-3">
                 <div class="card h-100 card-image">
-                    <img src="images/Luomutomaatit.jpeg" class="card-img-top sl-image"  alt="Luomutomaatit card">
+                    <img src="images/Luomutomaatit.jpeg" class="card-img-top" alt="Luomutomaatit card">
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title">Luomutomaatit</h5>
                         <p class="card-text">Kontulan Ässä.</p>
@@ -198,7 +203,7 @@
 
             <div class="col-md-6 col-lg-3 mb-3">
                 <div class="card h-100 card-image">
-                    <img src="images/Luomuchilli.jpeg" class="card-img-top"  alt="Luomutomaatit card">
+                    <img src="images/Luomuchilli.jpeg" class="card-img-top" alt="Luomutomaatit card">
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title">Luomuchilit</h5>
                         <p class="card-text">Thaima Puutarha.</p>
@@ -207,7 +212,7 @@
                 </div>
             </div>
 
-            
+
         <div class="row">   
 
             <div class="col-md-6 col-lg-3 mb-3">
@@ -234,7 +239,7 @@
 
             <div class="col-md-6 col-lg-3 mb-3">
                 <div class="card h-100 card-image">
-                    <img src="images/Sienet.jpeg" class="card-img-top sl-image" alt="Luomutomaatit card">
+                    <img src="images/Sienet.jpeg" class="card-img-top" alt="Luomutomaatit card">
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title">Luomukantarellit</h5>
                         <p class="card-text">Pirkkolan villimetsä</p>
@@ -244,18 +249,23 @@
             </div>
 
             <div class="col-md-6 col-lg-3 mb-3">
-                <div class="card h-100 card-image">
-                    <img src="images/Fish and seafood.jpg" class="card-img-top" alt="Luomutomaatit card">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Kala ja äyriäset</h5>
-                        <p class="card-text">Järvikylän kalan tukkutori</p>
-                        <a href="#" class="btn btn-primary mt-auto mx-auto">Tila</a>
-                    </div>
+              <div class="card h-100 card-image">
+                <img src="images/Fish and seafood.jpg" class="card-img-top" alt="Luomutomaatit card">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Kala ja äyriäset</h5>
+                    <p class="card-text">Järvikylän kalan tukkutori</p>
+                    <a href="#" class="btn btn-primary mt-auto mx-auto">Tila</a>
                 </div>
             </div>
-            
-    </div>
 
+        </div>
+       
+
+
+        </div>
+        <!-- Row-->
+      </div>
+      <!-- container-fluid-->
     </main>
 
     <footer class="bg-primary text-center py-4">
@@ -287,7 +297,7 @@
           <li class="list-inline-item">
             <a href="#" target="_blank"
               ><img
-                src="images/icon-facebook.svg"
+                src="/images/icon-facebook.svg"
                 width="48"
                 height="48"
                 alt="Facebook"
@@ -296,7 +306,7 @@
           <li class="list-inline-item">
             <a href="#" target="_blank"
               ><img
-                src="images/icon-instagram.svg"
+                src="/images/icon-instagram.svg"
                 width="48"
                 height="48"
                 alt="Instagram"
@@ -305,7 +315,7 @@
           <li class="list-inline-item">
             <a href="#" target="_blank"
               ><img
-                src="images/icon-twitter.svg"
+                src="/images/icon-twitter.svg"
                 width="48"
                 height="48"
                 alt="Twitter"
@@ -314,7 +324,7 @@
           <li class="list-inline-item">
             <a href="#" target="_blank"
               ><img
-                src="images/icon-pinterest.svg"
+                src="/images/icon-pinterest.svg"
                 width="48"
                 height="48"
                 alt="Pinterest"
@@ -324,7 +334,7 @@
       </div>
       <!--container fluid-->
     </footer>
-    <script src="vendor/bootstrap-5.1.1-dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="/vendor/bootstrap-5.1.1-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/script.js"></script>
   </body>
 </html>
