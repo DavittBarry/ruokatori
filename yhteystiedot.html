@@ -71,47 +71,27 @@
     </div>
     <!-- /.container-fluid -->
          </nav>
-    
-    
-        <header>
+    <!-- Header - set the background image for the header in the line below-->
+    <header class="py-5 bg-image-full" style="background-image: url('images/yhteistideot\ header.jpeg'); background-size:cover;
+    height: 500px; background-repeat: no-repeat;
+    margin-top:auto;">
+     <div class="text-center my-5">
+         
+       <div class="text-white">
+         <h1 class="mb-3" style="font-family: 'Montserrat', 'sans-serif';
+         color: #e1ff5c; font-size: 9rem;
+         text-shadow: 0 0 10px rgb(85, 83, 83);
+         line-height: 1.25; bottom: auto; 
+         top: 50%; transform: translateY(-10%);">Ruokatori</h1>
+         
+         <h4 class="mb-3" style=" color: #e1ff5c; font-family: 'Raleway', 'Sans-serif';
+         font-size: 4rem; font-weight:bold; transform:translateY(-50%);
+             text-shadow: 0 0 10px rgb(85, 83, 83); " >Tietomeistä</h4>
+     </div>
+ </header>
 
-        <main>
+     <!-- Header - -- Background image -->
     
-          <!-- Background image -->
-      <div
-      class="p-5 text-center bg-image"
-      style="
-        background-image: url("images/yhteistideot\ header.jpeg");
-        background-size:cover;height: 550px; background-repeat: no-repeat;
-        margin-top:auto;
-      "
-    >
-      
-          <div class="text-white">
-            <h1 class="mb-3" style="font-family: 'Montserrat', 'sans-serif';
-        color: #e1ff5c; font-size: 9rem;
-        text-shadow: 0 0 10px rgb(85, 83, 83);
-        line-height: 1.25; bottom: auto; 
-        top: 50%; transform: translateY(50%);">Ruokatori</h1>
-            <h4 class="mb-3" style=" color: #e1ff5c; font-family: 'Raleway', 'Sans-serif';
-            font-size: 4rem; font-weight:bold; transform:translateY(50%);
-            text-shadow: 0 0 10px rgb(85, 83, 83);">Yhteystiedot</h4>
-           
-          
-       
-      
-    </div>
-    
-    <!-- Background image -->
-            </div>
-        </div>
-        
-          </div>
-        </div>
-      </header>
-
-      </main>
-
       <div class="container-fluid max-width" style="margin-top:60px;">
             <div class="row">
                 <div class="col-md-8">
@@ -152,27 +132,23 @@
           
     </div> <!-- Container fluid -->
    
-    
-    
-   
-    
     <form action="https://formspree.io/f/mdoyyakl" method="POST" id="my-form">
-      <div class="form-group " style="padding: 2px 3rem;">
+      <div class="form-group col-sm-6" style="padding: 2px 3rem;">
         
         <label for="name"><p>Nimi*</p> </label> 
         <input id="name" name="name" placeholder="Koko nimesi.." type="text" aria-describedby="nameHelpBlock" 
         required="required" class="form-control"> 
         <span id="nameHelpBlock" class="form-text text-muted"><p>*Pakkollinen kenttä</p></span>
       </div>
-      <div class="form-group" style="padding: 2px 3rem;">
+      <div class="form-group col-sm-6" style="padding: 2px 3rem;">
         <label for="phone number"><p>Puhelinnumero</p></label> 
         <input id="phone number" name="phone number" placeholder="Puhelinnumerosi.." type="text" class="form-control">
       </div>
-      <div class="form-group" style="padding: 10px 3rem;">
+      <div class="form-group col-sm-6" style="padding: 10px 3rem;">
         <label for="email address"><p>Sähköpostiosoite*</p></label> 
         <input id="email address" name="email address" placeholder="Sähköpostiosoitesi.." type="text" required="required" class="form-control">
       </div>
-      <div class="form-group" style="padding: 2px 3rem;">
+      <div class="form-group col-sm-6" style="padding: 2px 3rem;">
         <label for="Subject"><p>Aihe*</p></label> 
         <div>
           <select id="Subject" name="Subject" required="required" class="custom-select">
@@ -185,11 +161,11 @@
           </select>
         </div>
       </div>
-      <div class="form-group" style="padding: 2px 3rem;">
-        <label for="Message">Viesti*</label> 
+      <div class="form-group col-sm-6" style="padding: 15px 3rem;">
+        <label for="Message"><p>Viesti*</p></label> 
         <textarea id="Message" name="Message" cols="40" rows="10" required="required" class="form-control"></textarea>
       </div> 
-      <div class="form-group" style= "padding: 2px 3rem;">
+      <div class="form-group col-sm-6" style= "padding: 2px 3rem;">
         <button name="submit" type="submit" class="btn btn-primary">Lähetä</button>
       </div>
     </form>
