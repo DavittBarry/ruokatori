@@ -34,16 +34,16 @@
 
 @font-face {
   font-family: 'Raleway';
-  src: url(/css/fonts/raleway-bold.woff2) format('woff2'),
-    url(/css/fonts/raleway-bold.woff) format('woff');
+  src: url(css/fonts/raleway-bold.woff2) format('woff2'),
+    url(css/fonts/raleway-bold.woff) format('woff');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url(/css/fonts/montserratalternates-bold.woff2) format('woff2'),
-    url(/css/fonts/montserratalternates-bold.woff) format('woff');
+  src: url(css/fonts/montserratalternates-bold.woff2) format('woff2'),
+    url(css/fonts/montserratalternates-bold.woff) format('woff');
   font-weight: bold;
   font-style: normal;
 }
@@ -98,7 +98,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #0aff37;
+  color: #2cbc3f;
   font-family: 'Raleway', 'sans-serif';
   font-weight: bold;
 }
@@ -455,6 +455,6 @@ body.menu-open #menuBtn .menu-btn-bar:nth-child(3) {
 }
 
 #rekForm {
-    color: #000;
-    padding-left: 4rem;
+  color: #000;
+  padding-left: 4rem;
 }
