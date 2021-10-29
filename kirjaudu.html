@@ -11,8 +11,30 @@
         <link rel="stylesheet" href="css/styles.css" />
         <title>Ruokatori - Kirjaudu</title>
       </head>
-<body class="bg-secondary">
-    <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-gradient" >
+<body>
+    <div
+        class="
+          container-fluid
+          max-width
+          d-flex
+          justify-content-between
+          align-items-start
+        "
+      >
+       
+        <button type="button" id="menuBtn" class="d-md-none">
+          <div class="menu-btn-icon">
+            <!-- Voisi olla myös divei -->
+            <span class="menu-btn-bar"></span>
+            <span class="menu-btn-bar"></span>
+            <span class="menu-btn-bar"></span>
+            <span class="menu-btn-bar"></span>
+          </div>
+          <span class="visually-hidden">Toggle menu</span>
+        </button>
+      </div>
+
+      <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-gradient" >
         <div class="container-fluid max-width">
           <!-- button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -21,7 +43,7 @@
           
           <ul class="navbar-nav justify-content-between w-100">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Etusivu</a>
+              <a class="nav-link active" aria-current="page" href="index.html">Etusivu</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="tuotteet.html">Tuotteet</a>
@@ -38,8 +60,9 @@
             <li class="nav-item">
               <a class="nav-link" href="aboutus.html">About us</a>
             </li>
+            <div class="navbar-nav justify-content-end">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="kirjaudu.html">Kirjaudu sisään</a>
+              <a class="nav-link" href="kirjaudu.html">Kirjaudu sisään</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="rekisteröidy.html">Rekisteröidy</a>
@@ -50,15 +73,97 @@
         </div>
         <!-- /.container-fluid -->
       </nav>
+    </header>
 
-      <div class="container max-width bg-white py-3">
-        <img src="/images/logo-leaf.svg" alt="logo">
-        <div class="d-flex justify-content-center">
-         
-          <h1>Tervetuloa Ruokatoriin!</h1>
-          
-        
+    <main>
+      <div
+        id="mainCarousel"
+        class="carousel slide mb-5"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#mainCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#mainCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#mainCarousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
         </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            
+            <div
+              class="carousel-img"
+              style="background-image: url(images/carousel1.jpeg)"
+            ></div>
+            <div class="carousel-caption">
+              Ruokatori <br />
+              <div class="carousel-caption-under">
+                Ravintoa suoraan tuottajilta
+              </div>
+              
+            </div>
+          </div>
+          <div class="carousel-item">
+           
+            <div
+              class="carousel-img"
+              style="background-image: url(images/carousel2.jpeg)"
+            ></div>
+            <div class="carousel-caption">
+              Ruokatori <br />
+              <div class="carousel-caption-under">
+                Ravintoa suoraan tuottajilta
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            
+            <div
+              class="carousel-img"
+              style="background-image: url(images/carousel4.jpeg)"
+            ></div>
+            <div class="carousel-caption">
+              Ruokatori <br />
+              <div class="carousel-caption-under">
+                Ravintoa suoraan tuottajilta
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#mainCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#mainCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
             <div class="col-md-4">
                 <h4>Kirjaudu sisään</h4>
                     <form action="#" method="post">
