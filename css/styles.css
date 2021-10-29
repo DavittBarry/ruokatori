@@ -453,3 +453,8 @@ body.menu-open #menuBtn .menu-btn-bar:nth-child(3) {
     font-size: 3rem;
   }
 }
+
+#rekForm {
+    color: #000;
+    padding-left: 4rem;
+}

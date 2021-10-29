@@ -1,136 +1,221 @@
 <!DOCTYPE html>
 <html lang="fi">
+<head>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Ruokatori</title>
-    <link
-      rel="stylesheet"
-      href="vendor/bootstrap-5.1.1-dist/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="vendor/icons-1.5.0/bootstrap-icons.svg" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vendor/bootstrap-5.1.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Ruokatori - aboutUs</title>
 
-  <h1>TÄMÄ ON TESTI</h1>
-
-  <body class="bg-secondary">
-    <nav
-      class="navbar navbar-expand-lg navbar-dark bg-ruokatorigreen bg-dark text"
-    >
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Ruokatori</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav text-center">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
-                >Etusivu</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Tuotteet</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Tuottajat</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Uutiset</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Yhteystiedostot.html"
-                >Yhteystiedostot</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link">Kirjaudu sisään</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link">Rekisteröidy</a>
-            </li>
-          </ul>
-        </div>
+</head>
+<header>
+<body>
+    <div class="
+      container-fluid
+      max-width
+      d-flex
+      justify-content-between
+      align-items-start
+    ">
+   
+    <button type="button" id="menuBtn" class="d-md-none">
+      <div class="menu-btn-icon">
+        <!-- Voisi olla myös divei -->
+        <span class="menu-btn-bar"></span>
+        <span class="menu-btn-bar"></span>
+        <span class="menu-btn-bar"></span>
+        <span class="menu-btn-bar"></span>
       </div>
-    </nav>
-    <img
-      src="/images/About us header.jpeg"
-      alt="Happy farmer"
-      height="400px"
-      width="1080px"
-    />
-    <div class="container-fluid max-width bg-white py-3">
-      <h2 style="text-align: center; font-family: verdana; font-size: 250%">
-        Tieto meistä
-      </h2>
+      <span class="visually-hidden">Toggle menu</span>
+    </button>
+  </div>
 
-      <p
-        style="
-          text-align: center;
-          font-family: verdana;
-          color: rgb(0, 0, 0);
-          font-size: 130%;
-        "
-      >
-        Tämän harjoitusprojektin tavoitteena on kehittää verkkopalvelu joka
-        tarjoa mahdollisuuden paikallisille lähiruoan tuottajille markkinoida ja
-        myydä suoraan kuluttajille. Tämä edistää yhteistyötä lähiruoan
-        tuottajien, maanviljelijöiden ja kuluttajien keskuudessa. Tavoitteena
-        Ruokatori.fi on helppokäyttöinen käyttöliittymän verkkopalvelu, joka
-        tarjoaa kuluttajille mahdollisuuden ostamaan lähiruoka (esim. hedelmät,
-        vihannekset, liha ja maitotuotteet) ja haluvat tukea lähiruoantuottaja
-        ja maanviljelyä. Ruokatori.fi verkkopalvelu on mobiilisovellus ja
-        verkkosivusto.
-      </p>
-
-      <p
-        style="
-          text-align: center;
-          font-family: verdana;
-          color: rgb(0, 0, 0);
-          font-size: 130%;
-        "
-      >
-        Kiitos, että olet kiinnostunut Ruokatori.fi verkkosivuprojektistamme.
-      </p>
-
-      <h2 style="text-align: center; font-family: verdana; color: rgb(0, 0, 0)">
-        Tervetuloa tutustumaan myös blogiimme:
-        <a href="https://ruokatoridevblogi.wordpress.com"
-          >Ruokatori.fi kehitysblogi</a
-        >
-
-        <p style="text-align: center" <h2 style="text-align: center"></p>
-      </h2>
-
-      <p style="text-align: center">
-        <strong></strong><br />
-        <br />
-      </p>
-      <p style="text-align: center">
-        <br />
-      </p>
+  <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+    <div class="container-fluid max-width">
+      <!-- button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button -->
+      <!-- div class="collapse navbar-collapse" id="navbarNav" -->
+      
+      <ul class="navbar-nav justify-content-between w-100">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Etusivu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="tuotteet.html">Tuotteet</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">Tuottajat</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="uutiset.html">Uutiset</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="yhteystiedot.html">Yhteystiedot</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="aboutus.html">About Us</a>
+        </li>
+        <div class="navbar-nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link" href="kirjaudu.html">Kirjaudu sisään</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="rekisteröidy.html">Rekisteröidy</a>
+        </li>
+      </div>
+      </ul>
+      <!-- /div -->
     </div>
+    <!-- /.container-fluid -->
+         </nav>
+          
+         <!-- Header - set the background image for the header in the line below-->
+         <header class="py-5 bg-image-full" style="background-image: url('images/About\ us\ header.jpeg'); background-size:cover;
+         height: 500px; background-repeat: no-repeat;
+         margin-top:auto;">
+          <div class="text-center my-5">
+              
+            <div class="text-white">
+              <h1 class="mb-3" style="font-family: 'Montserrat', 'sans-serif';
+              color: #e1ff5c; font-size: 5rem;
+              text-shadow: 0 0 10px rgb(85, 83, 83);
+              line-height: 1.25; bottom: auto; 
+              top: 50%; transform: translateY(-10%);">Ruokatori</h1>
+              
+              <h4 class="mb-3" style=" color: #e1ff5c; font-family: 'Raleway', 'Sans-serif';
+              font-size: 4rem; font-weight:bold; transform:translateY(-50%);
+                  text-shadow: 0 0 10px rgb(85, 83, 83); " >Tietomeistä</h4>
+          </div>
+      </header>
 
-    <script src="vendor/bootstrap-5.1.1-dist/js/bootstrap.min.js"></script>
-    <script src="js/script.js"></script>
-  </body>
+          <!-- Header - -- Background image -->
+ 
+<main>
+
+    <div class="container-fluid max-width" style="
+   
+    margin-top:60px;
+  ">
+            <div class="row">
+                <div class="col-md-8">
+                    <h2 class="mb-3">Tietomeidänprojektista</h2>
+                    
+                   
+                      
+                    <p>Tämän harjoitusprojektin tavoitteena on kehittää verkkopalvelu joka
+                      tarjoa mahdollisuuden paikallisille lähiruoan tuottajille markkinoida ja
+                      myydä suoraan kuluttajille. <br> <br>Tämä edistää yhteistyötä lähiruoan
+                      tuottajien, maanviljelijöiden ja kuluttajien keskuudessa. Tavoitteena
+                      Ruokatori.fi on helppokäyttöinen käyttöliittymän verkkopalvelu, joka
+                      tarjoaa kuluttajille mahdollisuuden ostamaan lähiruoka (esim. hedelmät,
+                      vihannekset, liha ja maitotuotteet) ja haluvat tukea lähiruoantuottaja
+                      ja maanviljelyä. Ruokatori.fi verkkopalvelu on mobiilisovellus ja
+                      verkkosivusto.<br> 
+                        
+                    </p>
+                </div>
+
+        
+             <div class="col-md-4 d-flex flex-column mb-5">
+              <img src="images/main1.jpeg"
+              alt="Parsa kuva"
+             
+              class="main-1-kuva"
+              width="286.44"
+              height="429"/>
+             </div>
+
+            
+             
+
+          </div>
+          <!--roww-->
+          <div class="row mb-5">
+                
+        </div> <!-- Row -->
+
+          
+    </div> <!-- Container fluid -->
+   
+    
+    
+   
+    
+    
+
+</main>
+
+
+<footer class="bg-primary text-center py-4">
+  <div class="container-fluid max-width">
+    <div class="row">
+      <div class="col-md text-md-start">
+        <h3 class="text-white">Yhteystiedot</h3>
+        <address>
+          Ruokatorikatu 4<br />
+          00100 Helsinki<br />
+          Finland<br />
+          <br />
+          Tel. +358 40 123 1234<br />
+          Email: ruokatori@info.com
+        </address>
+      </div>
+      <div class="col-md text-md-end">
+        <ul class="list-unstyled">
+          <li><a href="#">Etusivu</a></li>
+          <li><a href="#"> Tuotteet</a></li>
+          <li><a href="#">Tuottajat</a></li>
+          <li><a href="#">Uutiset</a></li>
+          <li><a href="#">Yhteystiedot</a></li>
+        </ul>
+      </div>
+    </div>
+    <!--row-->
+    <ul class="list-inline">
+      <li class="list-inline-item">
+        <a href="#" target="_blank"
+          ><img
+            src="images/icon-facebook.svg"
+            width="48"
+            height="48"
+            alt="Facebook"
+        /></a>
+      </li>
+      <li class="list-inline-item">
+        <a href="#" target="_blank"
+          ><img
+            src="images/icon-instagram.svg"
+            width="48"
+            height="48"
+            alt="Instagram"
+        /></a>
+      </li>
+      <li class="list-inline-item">
+        <a href="#" target="_blank"
+          ><img
+            src="images/icon-twitter.svg"
+            width="48"
+            height="48"
+            alt="Twitter"
+        /></a>
+      </li>
+      <li class="list-inline-item">
+        <a href="#" target="_blank"
+          ><img
+            src="images/icon-pinterest.svg"
+            width="48"
+            height="48"
+            alt="Pinterest"
+        /></a>
+      </li>
+    </ul>
+  </div>
+  <!--container fluid-->
+</footer>
+<script src="vendor/bootstrap-5.1.1-dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
 </html>
-<footer>Ruokatori.fi</footer>
