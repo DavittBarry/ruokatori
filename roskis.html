@@ -1,75 +1,124 @@
-<div class="container-fluid max-width">
-  <main>
-    <div></div>
-  <h2 >Ota yhteyttä</h2>
-  
-  <h3 >Meidän Tiimmi:</h3>
-  
-  <p> 
-  
-  Scrum Master:<a href="aleksi.utriainen@edu.taitotalo.fi"> Aleksi Utriainen</a> <br>
+<main>
+  <div class="container-fluid max-width">
+    <div class="row">
+      <div class="col-md-8">
+        <h2 class="mb-4">Ota yhteyttä</h2>
+        <h4 class="mb-3">Meidän Timii:</h4>
+        <p>
+          Scrum Master:<a href="aleksi.utriainen@edu.taitotalo.fi">
+            Aleksi Utriainen</a
+          >
+          <br />
+          Product Owner:<a href="davitt.barry@edu.taitotalo.fi">
+            Davitt Barry
+          </a>
+        </p>
 
-  Product Owner:<a href="davitt.barry@edu.taitotalo.fi">  Davitt Barry </a> 
-  
-      </p>
-
-  <h3">Development Team:</h3>
-
-  <p> 
-          <a href="edvard.jacobson@edu.taitotalo.fi"> Edvard Jacobson </a><br>
-          
-          <a href="jere.savolainen@edu.taitotalo.fi"> Jere Savolainen</a> <br>
+        <h4>Development Team:</h4>
+        <p class="mb-5">
+          <a href="edvard.jacobson@edu.taitotalo.fi"> Edvard Jacobson </a><br />
+          <a href="jere.savolainen@edu.taitotalo.fi"> Jere Savolainen</a> <br />
           <a href="shadab-sam.iqbal@edu.taitotalo.fi">Sam Iqbal</a>
-      
-      </p>
+        </p>
+        <p>
+          Kiitos, että olet kiinnostunut Ruokatori.fi
+          verkkokauppaprojektistamme<br />
+          <br />
+          Jätä meille viesti!
+        </p>
+      </div>
 
+      <div class="col-md-4 d-flex flex-column mb-5">
+        <img
+          src="images/otayhteytta.jpeg"
+          alt="ruokatori kuva parsa"
+          class="main-1-kuva"
+          width="286.44"
+          height="429"
+        />
+      </div>
+    </div>
+    <!--roww-->
 
-  </p>
+    <div class="row justify-content-center mb-5">
+      <form action="https://formspree.io/f/mdoyyakl" method="POST" id="my-form">
+        <div class="form-group" style="padding: 2px 3rem">
+          <label for="name"><p>Nimi*</p> </label>
+          <input
+            id="name"
+            name="name"
+            placeholder="Koko nimesi.."
+            type="text"
+            aria-describedby="nameHelpBlock"
+            required="required"
+            class="form-control"
+          />
+          <span id="nameHelpBlock" class="form-text text-muted"
+            ><p>*Pakkollinen kenttä</p></span
+          >
+        </div>
 
-      
-<p>Kiitos, että olet kiinnostunut Ruokatori.fi verkkokauppaprojektistamme.<br> 
-  Jätä meille viesti!</p>  
+        <div class="form-group" style="padding: 2px 3rem">
+          <label for="phone number"><p>Puhelinnumero</p></label>
+          <input
+            id="phone number"
+            name="phone number"
+            placeholder="Puhelinnumerosi.."
+            type="text"
+            class="form-control"
+          />
+        </div>
 
-  </main>
-  
+        <div class="form-group" style="padding: 10px 3rem">
+          <label for="email address"><p>Sähköpostiosoite*</p></label>
+          <input
+            id="email address"
+            name="email address"
+            placeholder="Sähköpostiosoitesi.."
+            type="text"
+            required="required"
+            class="form-control"
+          />
+        </div>
 
-
-
-
-          <form action="https://formspree.io/f/mdoyyakl" method="POST" id="my-form">
-          <div class="section group white">
-          <div class="content-wrapper">
-          <div class="col span_2_of_2">
-              <div class="leadtext">
-                  
-          <label for="name">Nimi*</label>
-          <input type="text" id="name" name="name" maxlength="28" placeholder="koko nimesi.." required> 
-
-          <label for="Phonenumber">Puhelinnumero*</label>
-          <input type="text" id="phonenumber" name="Puhelinnumero" maxlength="20" placeholder="Puhelinnumerosi " >
-
-          <label for="email">Sähköpostiosoite*</label>
-          <input type="text" id="email" name="email-wrap" placeholder="Sähköpostiosoitesi.." required> 
-
-          <label for="Subject">Aihe*</label>
-          <select id="Subject" name="Subject" required>
-          <option value="Query">Kysymys</option>
-          <option value="Feedback">Palaute</option>
-          <option value="">Tilaus</option>
-          <option value="Get a quote">Tarjouspyyntö</option>
-          <option value="Returns">Reklamaatio</option>
-          <option value="Others">Muu</option>
-          </select>
-
-          <label for="Message">Viesti*</label>
-          <textarea id="Message" name="Message" rows="10" cols="30" placeholder="kirjoita tähän viestisi.." style="height:200px"></textarea required>
-
-
-          <input type="submit" value="Lähetä viesti">
-
-          </form>
+        <div class="form-group" style="padding: 2px 3rem">
+          <label for="Subject"><p>Aihe*</p></label>
+          <div>
+            <select
+              id="Subject"
+              name="Subject"
+              required="required"
+              class="custom-select"
+            >
+              <option value="Query">Kysymys</option>
+              <option value="Feedback">Palaute</option>
+              <option value="Orders">Tilaus</option>
+              <option value="Get a quote">Tarjouspyyntö</option>
+              <option value="Returns">Reklamaatio</option>
+              <option value="Others">Muu</option>
+            </select>
           </div>
+        </div>
 
-
-          </main>
-</div>
+        <div class="form-group" style="padding: 15px 3rem">
+          <label for="Message"><p>Viesti*</p></label>
+          <textarea
+            id="Message"
+            name="Message"
+            cols="40"
+            rows="10"
+            required="required"
+            class="form-control"
+          ></textarea>
+        </div>
+        <div class="form-group" style="padding: 2px 3rem">
+          <button name="submit" type="submit" class="btn btn-primary">
+            Lähetä
+          </button>
+        </div>
+      </form>
+    </div>
+    <!-- row -->
+  </div>
+  <!-- Container fluid -->
+</main>
