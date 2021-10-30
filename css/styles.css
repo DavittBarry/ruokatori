@@ -28,7 +28,7 @@
   font-family: 'Raleway';
   src: url(/css/fonts/raleway-light.woff2) format('woff2'),
     url(/css/fonts/raleway-light.woff) format('woff');
-  font-weight: lighter;
+  font-weight: 200;
   font-style: normal;
 }
 
@@ -151,7 +151,7 @@ footer a:active {
 .btn,
 .form-control {
   padding: 0.5rem 0.75rem;
-  border-radius: 50;
+  border-radius: 50px;
 }
 
 .card-image img {

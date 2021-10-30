@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fi">
 <head>
-  <head>
+ 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,22 +12,25 @@
 
 <body>
   <div class="container-fluid max-width d-flex justify-content-between align-items-start">
+    <div class="menu-btn-icon">
     <button type="button" id="menuBtn" class="d-md-none">
-      <div class="menu-btn-icon">
+      
         <span class="menu-btn-bar"></span>
         <span class="menu-btn-bar"></span>
         <span class="menu-btn-bar"></span>
         <span class="menu-btn-bar"></span>
+      </button>
       </div>
+      
         <span class="visually-hidden">Toggle menu</span>
-    </button>
+    
   </div>
 <header>
   <nav class="navbar navbar-expand-md navbar-dark bg-primary">
     <div class="container-fluid max-width">
       <ul class="navbar-nav justify-content-between w-100">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">Etusivu</a>
+          <a class="nav-link" href="index.html">Etusivu</a>
         </li>
 
         <li class="nav-item">
@@ -43,14 +46,14 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="yhteystiedot.html">Yhteystiedot</a>
+          <a class="nav-link active" aria-current="page" href="yhteystiedot.html">Yhteystiedot</a>
         </li>
 
         <li class="nav-item">
           <a class="nav-link" href="aboutus.html">About Us</a>
         </li>
 
-        <div class="navbar-nav justify-content-end">
+      
         <li class="nav-item">
           <a class="nav-link" href="kirjaudu.html">Kirjaudu sisään</a>
         </li>
@@ -58,7 +61,7 @@
         <li class="nav-item">
           <a class="nav-link" href="rekisteröidy.html">Rekisteröidy</a>
         </li>
-      </div>
+      
       </ul>
         <!-- /div -->
     </div>
@@ -145,8 +148,7 @@
           src="images/otayhteytta.jpeg"
           alt="ruokatori kuva parsa"
           class="main-1-kuva"
-          width="286.44"
-          height="429"
+          
         />
       </div>
     </div>
@@ -155,7 +157,7 @@
     <div class="row justify-content-center mb-5">
       <form action="https://formspree.io/f/mdoyyakl" method="POST" id="my-form">
         <div class="form-group" style="padding: 2px 3rem">
-          <label for="name"><p>Nimi*</p> </label>
+          <label for="name">Nimi*</label>
           <input
             id="name"
             name="name"
@@ -166,14 +168,14 @@
             class="form-control"
           />
           <span id="nameHelpBlock" class="form-text text-muted"
-            ><p>*Pakkollinen kenttä</p></span
+            >*Pakollinen kenttä</span
           >
         </div>
 
         <div class="form-group" style="padding: 2px 3rem">
-          <label for="phone number"><p>Puhelinnumero</p></label>
+          <label>Puhelinnumero</label>
           <input
-            id="phone number"
+            id="phoneNumber"
             name="phone number"
             placeholder="Puhelinnumerosi.."
             type="text"
@@ -182,10 +184,10 @@
         </div>
 
         <div class="form-group" style="padding: 10px 3rem">
-          <label for="email address"><p>Sähköpostiosoite*</p></label>
+          <label for="email">Sähköpostiosoite*</label>
           <input
-            id="email address"
-            name="email address"
+            id="email"
+            name="email"
             placeholder="Sähköpostiosoitesi.."
             type="text"
             required="required"
@@ -194,14 +196,14 @@
         </div>
 
         <div class="form-group" style="padding: 2px 3rem">
-          <label for="Subject"><p>Aihe*</p></label>
+          <label for="Subject">Aihe*</label>
           <div>
             <select
               id="Subject"
               name="Subject"
               required="required"
               class="custom-select"
-            >
+            ><option label="Aihe"></option>
               <option value="Query">Kysymys</option>
               <option value="Feedback">Palaute</option>
               <option value="Orders">Tilaus</option>
@@ -213,7 +215,7 @@
         </div>
 
         <div class="form-group" style="padding: 15px 3rem">
-          <label for="Message"><p>Viesti*</p></label>
+          <label for="Message">Viesti*</label>
           <textarea
             id="Message"
             name="Message"
@@ -261,16 +263,16 @@
     <!--row-->
     <ul class="list-inline">
       <li class="list-inline-item">
-        <a href="https:/www.facebook.com" target="_blank"><img src="images/icon-facebook.svg" width="48" height="48" alt="Facebook"/></a>
+        <a href="/https:/www.facebook.com" target="_blank"><img src="images/icon-facebook.svg" width="48" height="48" alt="Facebook"/></a>
       </li>
       <li class="list-inline-item">
-        <a href="https:/instagram.com" target="_blank"><img src="images/icon-instagram.svg" width="48" height="48" alt="Instagram"/></a>
+        <a href="/https:/www.instagram.com" target="_blank"><img src="images/icon-instagram.svg" width="48" height="48" alt="Instagram"/></a>
       </li>
       <li class="list-inline-item">
-        <a href="https:/www.twitter.com" target="_blank"><img src="images/icon-twitter.svg" width="48" height="48" alt="Twitter" /></a>
+        <a href="/https:/www.twitter.com" target="_blank"><img src="images/icon-twitter.svg" width="48" height="48" alt="Twitter" /></a>
       </li>
       <li class="list-inline-item">
-        <a href="https:/www.pinterest.fi" target="_blank"><img src="images/icon-pinterest.svg" width="48" height="48" alt="Pinterest"/></a>
+        <a href="/https:/www.pinterest.fi" target="_blank"><img src="images/icon-pinterest.svg" width="48" height="48" alt="Pinterest"/></a>
       </li>
     </ul>
   </div>
