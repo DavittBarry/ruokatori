@@ -65,7 +65,7 @@
 body {
   background-color: #fff;
   color: #fff;
-  font-family: 'courier', 'sans-serif';
+  font-family: 'courier';
 }
 
 body.menu-open {
