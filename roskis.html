@@ -1,124 +1,53 @@
-<main>
-  <div class="container-fluid max-width">
-    <div class="row">
-      <div class="col-md-8">
-        <h2 class="mb-4">Ota yhteyttä</h2>
-        <h4 class="mb-3">Meidän Timii:</h4>
-        <p>
-          Scrum Master:<a href="aleksi.utriainen@edu.taitotalo.fi">
-            Aleksi Utriainen</a
-          >
-          <br />
-          Product Owner:<a href="davitt.barry@edu.taitotalo.fi">
-            Davitt Barry
-          </a>
-        </p>
-
-        <h4>Development Team:</h4>
-        <p class="mb-5">
-          <a href="edvard.jacobson@edu.taitotalo.fi"> Edvard Jacobson </a><br />
-          <a href="jere.savolainen@edu.taitotalo.fi"> Jere Savolainen</a> <br />
-          <a href="shadab-sam.iqbal@edu.taitotalo.fi">Sam Iqbal</a>
-        </p>
-        <p>
-          Kiitos, että olet kiinnostunut Ruokatori.fi
-          verkkokauppaprojektistamme<br />
-          <br />
-          Jätä meille viesti!
-        </p>
-      </div>
-
-      <div class="col-md-4 d-flex flex-column mb-5">
-        <img
-          src="images/otayhteytta.jpeg"
-          alt="ruokatori kuva parsa"
-          class="main-1-kuva"
-          width="286.44"
-          height="429"
-        />
-      </div>
-    </div>
-    <!--roww-->
-
-    <div class="row justify-content-center mb-5">
-      <form action="https://formspree.io/f/mdoyyakl" method="POST" id="my-form">
-        <div class="form-group" style="padding: 2px 3rem">
-          <label for="name"><p>Nimi*</p> </label>
-          <input
-            id="name"
-            name="name"
-            placeholder="Koko nimesi.."
-            type="text"
-            aria-describedby="nameHelpBlock"
-            required="required"
-            class="form-control"
-          />
-          <span id="nameHelpBlock" class="form-text text-muted"
-            ><p>*Pakkollinen kenttä</p></span
-          >
-        </div>
-
-        <div class="form-group" style="padding: 2px 3rem">
-          <label for="phone number"><p>Puhelinnumero</p></label>
-          <input
-            id="phone number"
-            name="phone number"
-            placeholder="Puhelinnumerosi.."
-            type="text"
-            class="form-control"
-          />
-        </div>
-
-        <div class="form-group" style="padding: 10px 3rem">
-          <label for="email address"><p>Sähköpostiosoite*</p></label>
-          <input
-            id="email address"
-            name="email address"
-            placeholder="Sähköpostiosoitesi.."
-            type="text"
-            required="required"
-            class="form-control"
-          />
-        </div>
-
-        <div class="form-group" style="padding: 2px 3rem">
-          <label for="Subject"><p>Aihe*</p></label>
-          <div>
-            <select
-              id="Subject"
-              name="Subject"
-              required="required"
-              class="custom-select"
-            >
-              <option value="Query">Kysymys</option>
-              <option value="Feedback">Palaute</option>
-              <option value="Orders">Tilaus</option>
-              <option value="Get a quote">Tarjouspyyntö</option>
-              <option value="Returns">Reklamaatio</option>
-              <option value="Others">Muu</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="form-group" style="padding: 15px 3rem">
-          <label for="Message"><p>Viesti*</p></label>
-          <textarea
-            id="Message"
-            name="Message"
-            cols="40"
-            rows="10"
-            required="required"
-            class="form-control"
-          ></textarea>
-        </div>
-        <div class="form-group" style="padding: 2px 3rem">
-          <button name="submit" type="submit" class="btn btn-primary">
-            Lähetä
-          </button>
-        </div>
-      </form>
-    </div>
-    <!-- row -->
+<div class="row" style="padding: 5rem">
+  <div class="col-sm-8">
+    <h4>Pääuutisotsikko</h4>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, nam.
+      Vero nostrum hic nemo libero consequuntur, corrupti perferendis
+      repellendus molestias non aut dolorum deserunt error sequi ducimus quis
+      illum quidem. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+      Laborum optio reiciendis eveniet! Nemo, nihil iste beatae numquam fugit
+      quos, perspiciatis fugiat sunt repudiandae iusto magnam omnis facere quas
+      maiores ea.
+    </p>
   </div>
-  <!-- Container fluid -->
-</main>
+  <div class="col-sm-4"><img src="/images/uutiset1.jpg" /></div>
+</div>
+
+<div class="row" style="padding: 5rem">
+  <div class="col-sm-8">
+    <h4>Toinen uutinen</h4>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, nam.
+      Vero nostrum hic nemo libero consequuntur, corrupti perferendis
+      repellendus molestias non aut dolorum deserunt error sequi ducimus quis
+      illum quidem. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+      Laborum optio reiciendis eveniet! Nemo, nihil iste beatae numquam fugit
+      quos, perspiciatis fugiat sunt repudiandae iusto magnam omnis facere quas
+      maiores ea.
+    </p>
+  </div>
+  <div class="col-sm-4"><img src="/images/uutinen2.jpg" /></div>
+</div>
+
+<div class="row">
+  <div class="col-md-6 col-lg-3 mb-3">
+    <div class="card h-100">
+      <img src="images/uutiset1.jpg" class="card-img-top" alt="uusi asiakas" />
+      <div class="card-body d-flex flex-column">
+        <h5 class="card-title">Meillä on uusi asiakas!</h5>
+        <a href="#" class="btn btn-primary mt-auto mx-auto">Tutustu</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6 col-lg-3 mb-3">
+    <div class="card h-100">
+      <img src="images/uutiset1.jpg" class="card-img-top" alt="Töihin" />
+      <div class="card-body d-flex flex-column">
+        <h5 class="card-title">Tule meille töihin</h5>
+        <p class="card-text">Lähetä vapaa muotoinen hakemus</p>
+        <a href="#" class="btn btn-primary mt-auto mx-auto">Hae</a>
+      </div>
+    </div>
+  </div>
+</div>

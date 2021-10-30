@@ -53,7 +53,7 @@
 :root {
   --bs-blue: #1a5dad;
   --bs-primary: #1a5dad;
-  --bs-primary-rgb: 161, 197, 165;
+  --bs-primary-rgb: 56, 167, 0;
 }
 
 /* .bg-gradient {
@@ -63,7 +63,7 @@
 /* ELEMENTS */
 
 body {
-  background-color: #fff;
+  background-color: #e5e6e4;
   color: #fff;
   font-family: 'courier', 'sans-serif';
 }
@@ -98,7 +98,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #2cbc3f;
+  color: #38b000;
   font-family: 'Raleway', 'sans-serif';
   font-weight: bold;
 }
@@ -328,7 +328,7 @@ body.menu-open #menuBtn .menu-btn-bar:nth-child(3) {
     top: 50%; /* Keskitetään karusellin teksti*/
     transform: translateY(-50%); /* Keskitetään karusellin teksti*/
     font-family: 'Montserrat', 'sans-serif';
-    color: #e1ff5c;
+    color: #ffe963;
     font-size: 2rem;
     text-shadow: 0 0 10px rgb(85, 83, 83);
     line-height: 1.25;
