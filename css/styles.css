@@ -472,7 +472,7 @@ body.menu-open #menuBtn .menu-btn-bar:nth-child(3) {
 
 #rekForm div {
   padding-top: 1rem;
-  width: auto;
+  width: 100%;
 }
 
 #rekForm button {
