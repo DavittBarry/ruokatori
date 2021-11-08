@@ -2,24 +2,24 @@
 
 @font-face {
   font-family: 'Courier';
-  src: url(css/fonts/courier_prime.woff2) format('woff2'),
-    url(css/fonts/courier_prime.woff) format('woff');
+  src: url(/css/fonts/courier_prime.woff2) format('woff2'),
+    url(/css/fonts/courier_prime.woff) format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Raleway';
-  src: url(css/fonts/raleway-medium.woff2) format('woff2'),
-    url(css/fonts/raleway-medium.woff) format('woff');
+  src: url(/css/fonts/raleway-medium.woff2) format('woff2'),
+    url(/css/fonts/raleway-medium.woff) format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Raleway';
-  src: url(css/fonts/raleway-mediumitalic.woff2) format('woff2'),
-    url(css/fonts/raleway-mediumitalic.woff) format('woff');
+  src: url(/css/fonts/raleway-mediumitalic.woff2) format('woff2'),
+    url(/css/fonts/raleway-mediumitalic.woff) format('woff');
   font-weight: normal;
   font-style: italic;
 }
@@ -34,16 +34,16 @@
 
 @font-face {
   font-family: 'Raleway';
-  src: url(css/fonts/raleway-bold.woff2) format('woff2'),
-    url(css/fonts/raleway-bold.woff) format('woff');
+  src: url(/css/fonts/raleway-bold.woff2) format('woff2'),
+    url(/css/fonts/raleway-bold.woff) format('woff');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url(css/fonts/montserratalternates-bold.woff2) format('woff2'),
-    url(css/fonts/montserratalternates-bold.woff) format('woff');
+  src: url(/css/fonts/montserratalternates-bold.woff2) format('woff2'),
+    url(/css/fonts/montserratalternates-bold.woff) format('woff');
   font-weight: bold;
   font-style: normal;
 }
