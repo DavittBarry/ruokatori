@@ -2,48 +2,48 @@
 
 @font-face {
   font-family: 'Courier';
-  src: url(/css/fonts/courier_prime.woff2) format('woff2'),
-    url(/css/fonts/courier_prime.woff) format('woff');
+  src: url(https://github.com/DavittBarry/ruokatori/blob/main/css/fonts/courier_prime.woff2) format('woff2'),
+    url(https://github.com/DavittBarry/ruokatori/blob/main/css/fonts/courier_prime.woff) format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Raleway';
-  src: url(/css/fonts/raleway-medium.woff2) format('woff2'),
-    url(/css/fonts/raleway-medium.woff) format('woff');
+  src: url(https://github.com/DavittBarry/ruokatori/blob/main/css/fonts/raleway-medium.woff2) format('woff2'),
+    url(https://github.com/DavittBarry/ruokatori/blob/main/css/fonts/raleway-medium.woff) format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Raleway';
-  src: url(/css/fonts/raleway-mediumitalic.woff2) format('woff2'),
-    url(/css/fonts/raleway-mediumitalic.woff) format('woff');
+  src: url(https://github.com/DavittBarry/ruokatori/blob/main/css/fonts/raleway-mediumitalic.woff2) format('woff2'),
+    url(https://github.com/DavittBarry/ruokatori/blob/main/css/fonts/raleway-mediumitalic.woff) format('woff');
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Raleway';
-  src: url(/css/fonts/raleway-light.woff2) format('woff2'),
-    url(/css/fonts/raleway-light.woff) format('woff');
-  font-weight: lighter;
+  src: url(https://github.com/DavittBarry/ruokatori/blob/main/css/fonts/raleway-light.woff2) format('woff2'),
+    url(https://github.com/DavittBarry/ruokatori/blob/main/css/fonts/raleway-light.woff) format('woff');
+  font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Raleway';
-  src: url(/css/fonts/raleway-bold.woff2) format('woff2'),
-    url(/css/fonts/raleway-bold.woff) format('woff');
+  src: url(https://github.com/DavittBarry/ruokatori/blob/main/css/fonts/raleway-bold.woff2) format('woff2'),
+    url(https://github.com/DavittBarry/ruokatori/blob/main/css/fonts/raleway-bold.woff) format('woff');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url(/css/fonts/montserratalternates-bold.woff2) format('woff2'),
-    url(/css/fonts/montserratalternates-bold.woff) format('woff');
+  src: url(https://github.com/DavittBarry/ruokatori/blob/main/css/fonts/montserratalternates-bold.woff2) format('woff2'),
+    url(https://github.com/DavittBarry/ruokatori/blob/main/css/fonts/montserratalternates-bold.woff) format('woff');
   font-weight: bold;
   font-style: normal;
 }
@@ -151,7 +151,7 @@ footer a:active {
 .btn,
 .form-control {
   padding: 0.5rem 0.75rem;
-  border-radius: 50;
+  border-radius: 50px;
 }
 
 .card-image img {
@@ -453,9 +453,28 @@ body.menu-open #menuBtn .menu-btn-bar:nth-child(3) {
     font-family: 'Raleway';
     font-size: 3rem;
   }
+  
+}
+
+#formDiv {
+  display: block;
+  text-align: center;
 }
 
 #rekForm {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
   color: #000;
-  padding-left: 4rem;
+ 
+}
+
+#rekForm div {
+  padding-top: 1rem;
+  width: 100%;
+}
+
+#rekForm button {
+ margin-bottom: 3rem;
 }
