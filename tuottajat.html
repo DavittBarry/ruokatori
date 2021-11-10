@@ -1,310 +1,395 @@
 <!DOCTYPE html>
 <html lang="fi">
-<head>
-  
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="vendor/bootstrap-5.1.1-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="vendor/bootstrap-5.1.1-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+
     <title>Ruokatori - Tuottajat</title>
-</head>
+  </head>
 
-<body>
-  <div class="container-fluid max-width d-flex justify-content-between align-items-start">
-    <div class="menu-btn-icon">
-    <button type="button" id="menuBtn" class="d-md-none">
-      
-        <span class="menu-btn-bar"></span>
-        <span class="menu-btn-bar"></span>
-        <span class="menu-btn-bar"></span>
-        <span class="menu-btn-bar"></span>
-      </button>
+  <body>
+    <div
+      class="
+        container-fluid
+        max-width
+        d-flex
+        justify-content-between
+        align-items-start
+      "
+    >
+      <div class="menu-btn-icon">
+        <button type="button" id="menuBtn" class="d-md-none">
+          <span class="menu-btn-bar"></span>
+          <span class="menu-btn-bar"></span>
+          <span class="menu-btn-bar"></span>
+          <span class="menu-btn-bar"></span>
+        </button>
       </div>
-      
-        <span class="visually-hidden">Toggle menu</span>
-    
-  </div>
-<header>
-  <nav class="navbar navbar-expand-md navbar-dark bg-primary">
-    <div class="container-fluid max-width">
-      <ul class="navbar-nav justify-content-between w-100">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Etusivu</a>
-        </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="tuotteet.html">Tuotteet</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="tuottajat.html">Tuottajat</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="uutiset.html">Uutiset</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="yhteystiedot.html">Yhteystiedot</a>
-        </li>
-
-      
-       
-        <li class="nav-item">
-          <a class="nav-link" href="kirjaudu.html">Kirjaudu sisään</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="rekisteröidy.html">Rekisteröidy</a>
-        </li>
-      
-      </ul>
+      <span class="visually-hidden">Toggle menu</span>
     </div>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+        <div class="container-fluid max-width">
+          <ul class="navbar-nav justify-content-between w-100">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Etusivu</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="tuotteet.html">Tuotteet</a>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="tuottajat.html"
+                >Tuottajat</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="uutiset.html">Uutiset</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="yhteystiedot.html">Yhteystiedot</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="kirjaudu.html">Kirjaudu sisään</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="rekisteröidy.html">Rekisteröidy</a>
+            </li>
+          </ul>
+        </div>
         <!-- /div -->
-    
-      <!-- /.container-fluid -->
-  </nav>
 
-  <div id="mainCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-          <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
+        <!-- /.container-fluid -->
+      </nav>
 
-      <div class="carousel-inner">
+      <div
+        id="mainCarousel"
+        class="carousel slide mb-5"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#mainCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#mainCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#mainCarousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
 
-        <div class="carousel-item active">
-          <div class="carousel-img" style="background-image: url(images/carousel1.jpeg)"></div>
-          <div class="carousel-caption"> Ruokatori <br />
-            <div class="carousel-caption-under"> Ravintoa suoraan tuottajilta </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div
+              class="carousel-img"
+              style="background-image: url(images/carousel1.jpeg)"
+            ></div>
+            <div class="carousel-caption">
+              Ruokatori <br />
+              <div class="carousel-caption-under">
+                Ravintoa suoraan tuottajilta
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div
+              class="carousel-img"
+              style="background-image: url(images/carousel2.jpeg)"
+            ></div>
+            <div class="carousel-caption">
+              Ruokatori <br />
+              <div class="carousel-caption-under">
+                Ravintoa suoraan tuottajilta
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div
+              class="carousel-img"
+              style="background-image: url(images/carousel4.jpeg)"
+            ></div>
+            <div class="carousel-caption">
+              Ruokatori <br />
+              <div class="carousel-caption-under">
+                Ravintoa suoraan tuottajilta
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="carousel-item">
-          <div class="carousel-img" style="background-image: url(images/carousel2.jpeg)"></div>
-          <div class="carousel-caption"> Ruokatori <br />
-            <div class="carousel-caption-under"> Ravintoa suoraan tuottajilta </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#mainCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#mainCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- Main Carousel -->
+    </header>
+    <main>
+      <div class="container-fluid max-width">
+        <div class="row">
+          <div class="col-md-12 mb-5">
+            <h2 class="mb-3">Tuottajat</h2>
+            <p>Tervetuloa tutustumaan ruokatorin tuottajiin!</p>
+            <p>
+              Tuoreiden luomutuotteiden ostaminen ei ole koskaan ollut näin
+              helppoa! Pelkät luomutuotteet on helppo suodattaa näkymään, kun
+              valitset kategorian yläreunan LUOMU-suodattimen päälle.
+              Luomutuotteet on merkitty vihreällä LUOMU-merkillä.
+            </p>
+            <p>Mullistetaan yhdessä ruokailun kulttuuria.</p>
+
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum
+              distinctio impedit obcaecati quidem. Sint nostrum obcaecati quo
+              dolorem perspiciatis harum nobis, quia, dolor et ducimus,
+              assumenda ullam quaerat ipsum a.
+            </p>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates provident ex doloribus eligendi maxime facilis magni
+              quis consequuntur eaque eos?
+            </p>
           </div>
         </div>
+        <!--roww-->
 
-        <div class="carousel-item">
-          <div class="carousel-img" style="background-image: url(images/carousel4.jpeg)"></div>
-          <div class="carousel-caption"> Ruokatori <br />
-            <div class="carousel-caption-under"> Ravintoa suoraan tuottajilta </div>
+        <div class="row mb-5">
+          <div class="col-md-6">
+            <h2>Viikon tuottaja</h2>
+
+            <p>
+              Laurin lammasfarmi sijaitsee tuusulassa ja on erikoistunut
+              luomulampaan lihaan. Yrittäjä lauri on pyörittänyt farmiaan
+              kolmenkymmenen vuoden ajan.
+            </p>
+
+            <p>
+              Viikon erikoistuotteena on tällä kertaa tarjouksessa laurin
+              lammastilan karitsan pihvit.
+            </p>
+
+            <p>
+              Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Explicabo illum possimus consequuntur et ipsam
+              fugit suscipit voluptas rerum exercitationem distinctio ad in,
+              quidem architecto pariatur.
+            </p>
+
+            <p class="">Lammaspivhien kampanjahinta on 24.90e/kg</p>
+
+            <a
+              href="tuottajat.html"
+              target="blank_"
+              class="btn btn-primary mt-auto mx-auto read-more"
+              >Tilaa</a
+            >
+          </div>
+
+          <div
+            class="col-md-6 d-flex justify-content-center viikontuottajakuva"
+          >
+            <img src="images/lammasreal.png" alt="lammaspihvi" />
           </div>
         </div>
+        <!-- roww -->
 
+        <div class="row">
+          <h2>Tuottajat: Helsinki</h2>
+          <div class="col-md text-center d-flex flex-column mb-5">
+            <a href="#" target="blank_">
+              <img
+                src="images/spotlight-1.jpeg"
+                alt="Spotligth 1"
+                class="sl-image mb-5 spot-image"
+            /></a>
+            <h3>Karoliinan kurpitsa</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+              debitis quibusdam error nemo optio vitae quia laboriosam non
+              architecto quam!
+            </p>
+            <a href="#" class="btn btn-primary mt-auto mx-auto read-more"
+              >Read more</a
+            >
+          </div>
+
+          <div class="col-md text-center d-flex flex-column mb-5">
+            <a href="#" target="blank_">
+              <img
+                src="images/spotligth-2.jpeg"
+                alt="Spotligth 2"
+                class="sl-image mb-5 spot-image"
+            /></a>
+            <h3>Vellun viherkauppa</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum
+              eius quis quaerat architecto aspernatur excepturi odio libero.
+            </p>
+            <a href="#" class="btn btn-primary mt-auto mx-auto read-more"
+              >Read more</a
+            >
+          </div>
+
+          <div class="col-md text-center d-flex flex-column mb-5">
+            <a href="#" target="blank_">
+              <img
+                src="images/spotligth-3.jpeg"
+                alt="Spotligth 3"
+                class="sl-image mb-5 spot-image"
+            /></a>
+            <h3>Pekan perunatila</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Distinctio iusto aliquam esse. Sit saepe sunt distinctio
+              molestiae? Ducimus, consequatur placeat.
+            </p>
+            <a href="#" class="btn btn-primary mt-auto mx-auto read-more"
+              >Read more</a
+            >
+          </div>
+
+          <div class="col-md text-center d-flex flex-column mb-5">
+            <a href="#" target="blank_">
+              <img
+                src="images/tuotteetMain.jpeg"
+                alt="Spotligth 1"
+                class="sl-image mb-5 spot-image"
+            /></a>
+            <h3>Seijan sipulifarmi</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+              debitis quibusdam error nemo optio vitae quia laboriosam non
+              architecto quam!
+            </p>
+            <a href="#" class="btn btn-primary mt-auto mx-auto read-more"
+              >Read more</a
+            >
+          </div>
+        </div>
+        <!-- Row-->
       </div>
+      <!-- container-fluid-->
+    </main>
 
-      <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
+    <footer class="bg-primary text-center py-4">
+      <div class="container-fluid max-width">
+        <div class="row">
+          <div class="col-md text-md-start">
+            <h3 class="text-white">Yhteystiedot</h3>
+            <address>
+              Ruokatorikatu 4<br />
+              00100 Helsinki<br />
+              Finland<br />
+              <br />
+              Tel. +358 40 123 1234<br />
+              Email: ruokatori@info.com
+            </address>
+          </div>
+          <div class="col-md text-md-end">
+            <ul class="list-unstyled">
+              <li><a href="index.html">Etusivu</a></li>
+              <li><a href="tuotteet.html"> Tuotteet</a></li>
+              <li><a href="tuottajat.html">Tuottajat</a></li>
+              <li><a href="uutiset.html">Uutiset</a></li>
+              <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+            </ul>
+          </div>
+        </div>
+        <!--row-->
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <a href="#" target="_blank" class="facebook"
+              ><ion-icon
+                name="logo-facebook"
+                class="ionicon faceicon"
+              ></ion-icon
+            ></a>
+          </li>
 
-      <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-
-  </div>
-  <!-- Main Carousel -->
-</header>
-<main>
-  <div class="container-fluid max-width">
-    <div class="row">
-      <div class="col-md-12 mb-5">
-        <h2 class="mb-3">Tuottajat</h2>
-        <p>Tervetuloa tutustumaan ruokatorin tuottajiin!</p>
-        <p>
-          Tuoreiden luomutuotteiden ostaminen ei ole koskaan ollut näin helppoa!
-          Pelkät luomutuotteet on helppo suodattaa näkymään, kun valitset
-          kategorian yläreunan LUOMU-suodattimen päälle. Luomutuotteet on
-          merkitty vihreällä LUOMU-merkillä.
-        </p>
-        <p>Mullistetaan yhdessä ruokailun kulttuuria.</p>
-
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum
-          distinctio impedit obcaecati quidem. Sint nostrum obcaecati quo
-          dolorem perspiciatis harum nobis, quia, dolor et ducimus, assumenda
-          ullam quaerat ipsum a.
-        </p>
-
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
-          provident ex doloribus eligendi maxime facilis magni quis consequuntur
-          eaque eos?
-        </p>
-      </div>
-    </div>
-    <!--roww-->
-
-    <div class="row mb-5">
-      <div class="col-md-6">
-        <h2>Viikon tuottaja</h2>
-
-        <p>
-          Laurin lammasfarmi sijaitsee tuusulassa ja on erikoistunut
-          luomulampaan lihaan. Yrittäjä lauri on pyörittänyt farmiaan
-          kolmenkymmenen vuoden ajan.
-        </p>
-
-        <p>
-          Viikon erikoistuotteena on tällä kertaa tarjouksessa laurin
-          lammastilan karitsan pihvit.
-        </p>
-
-        <p>
-          Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Explicabo illum possimus consequuntur et ipsam fugit
-          suscipit voluptas rerum exercitationem distinctio ad in, quidem
-          architecto pariatur.
-        </p>
-
-        <p class="">Lammaspivhien kampanjahinta on 24.90e/kg</p>
-
-        <a
-          href="tuottajat.html"
-          target="blank_"
-          class="btn btn-primary mt-auto mx-auto read-more"
-          >Tilaa</a
-        >
-      </div>
-
-      <div class="col-md-6 d-flex justify-content-center viikontuottajakuva">
-        <img src="images/lammasreal.png" alt="lammaspihvi" />
-      </div>
-    </div>
-    <!-- roww -->
-
-    <div class="row">
-      <h2>Tuottajat: Helsinki</h2>
-      <div class="col-md text-center d-flex flex-column mb-5">
-        <a href="#" target="blank_">
-          <img
-            src="images/spotlight-1.jpeg"
-            alt="Spotligth 1"
-            
-            class="sl-image mb-5 spot-image"
-        /></a>
-        <h3>Karoliinan kurpitsa</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
-          debitis quibusdam error nemo optio vitae quia laboriosam non
-          architecto quam!
-        </p>
-        <a href="#" class="btn btn-primary mt-auto mx-auto read-more"
-          >Read more</a
-        >
-      </div>
-
-      <div class="col-md text-center d-flex flex-column mb-5">
-        <a href="#" target="blank_">
-          <img
-            src="images/spotligth-2.jpeg"
-            alt="Spotligth 2"
-            
-            class="sl-image mb-5 spot-image"
-        /></a>
-        <h3>Vellun viherkauppa</h3>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum eius
-          quis quaerat architecto aspernatur excepturi odio libero. 
-        </p>
-        <a href="#" class="btn btn-primary mt-auto mx-auto read-more"
-          >Read more</a
-        >
-      </div>
-
-      <div class="col-md text-center d-flex flex-column mb-5">
-        <a href="#" target="blank_">
-          <img
-            src="images/spotligth-3.jpeg"
-            alt="Spotligth 3"
-          
-            class="sl-image mb-5 spot-image"
-        /></a>
-        <h3>Pekan perunatila</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-          iusto aliquam esse. Sit saepe sunt distinctio molestiae? Ducimus,
-          consequatur placeat.
-        </p>
-        <a href="#" class="btn btn-primary mt-auto mx-auto read-more"
-          >Read more</a
-        >
-      </div>
-
-      <div class="col-md text-center d-flex flex-column mb-5">
-        <a href="#" target="blank_">
-          <img
-            src="images/tuotteetMain.jpeg"
-            alt="Spotligth 1"
-          
-            class="sl-image mb-5 spot-image"
-        /></a>
-        <h3>Seijan sipulifarmi</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
-          debitis quibusdam error nemo optio vitae quia laboriosam non
-          architecto quam!
-        </p>
-        <a href="#" class="btn btn-primary mt-auto mx-auto read-more"
-          >Read more</a
-        >
-      </div>
-    </div>
-    <!-- Row-->
-  </div>
-  <!-- container-fluid-->
-</main>
-
-<footer class="bg-primary text-center py-4">
-  <div class="container-fluid max-width">
-    <div class="row">
-      <div class="col-md text-md-start">
-        <h3 class="text-white">Yhteystiedot</h3>
-        <address>
-        Ruokatorikatu 4<br />
-        00100 Helsinki<br />
-        Finland<br />
-        <br />
-        Tel. +358 40 123 1234<br />
-        Email: ruokatori@info.com
-        </address>
-      </div>
-      <div class="col-md text-md-end">
-        <ul class="list-unstyled">
-          <li><a href="index.html">Etusivu</a></li>
-          <li><a href="tuotteet.html"> Tuotteet</a></li>
-          <li><a href="tuottajat.html">Tuottajat</a></li>
-          <li><a href="uutiset.html">Uutiset</a></li>
-          <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+          <li class="list-inline-item">
+            <a href="https://www.instagram.com/ruokatori/" target="_blank"
+              ><ion-icon
+                name="logo-instagram"
+                class="ionicon instaicon"
+              ></ion-icon
+            ></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="/https:/www.twitter.com" target="_blank"
+              ><ion-icon
+                name="logo-twitter"
+                class="ionicon twittericon"
+              ></ion-icon
+            ></a>
+          </li>
+          <li class="list-inline-item">
+            <a
+              href="https://www.youtube.com/channel/UCPjRCb84wWfdjxRUz0xOVmA"
+              target="_blank"
+              ><ion-icon
+                name="logo-youtube"
+                class="ionicon youtubeicon"
+              ></ion-icon
+            ></a>
+          </li>
         </ul>
       </div>
-    </div>
-    <!--row-->
-    <ul class="list-inline">
-      <li class="list-inline-item">
-        <a href="/https:/www.facebook.com" target="_blank"><img src="images/icon-facebook.svg" width="48" height="48" alt="Facebook"/></a>
-      </li>
-      <li class="list-inline-item">
-        <a href="https://www.instagram.com/ruokatori/" target="_blank"><img src="images/icon-instagram.svg" width="48" height="48" alt="Instagram"/></a>
-      </li>
-      <li class="list-inline-item">
-        <a href="/https:/www.twitter.com" target="_blank"><img src="images/icon-twitter.svg" width="48" height="48" alt="Twitter" /></a>
-      </li>
-      <li class="list-inline-item">
-        <a href="https://www.youtube.com/channel/UCPjRCb84wWfdjxRUz0xOVmA" target="_blank"><img src="images/icon-youtube.svg" width="48" height="48" alt="Pinterest"/></a>
-      </li>
-    </ul>
-  </div>
-  <!--container fluid-->
-</footer>
+      <!--container fluid-->
+    </footer>
     <script src="vendor/bootstrap-5.1.1-dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
