@@ -1,117 +1,478 @@
-<h2>Tervetuloa Ruokatoriin!</h2>
+<main>
+  <div class="container-fluid max-width" style="margin-top: 60px">
+    <div class="row">
+      <div class="col-md-8">
+        <h2 class="mb-3">Infoa tuotteista</h2>
+        <p>
+          Miten tilaaat jne. Tuoreiden luomutuotteiden ostaminen ei ole koskaan
+          ollut näin helppoa! Ruokatori on palvelu, jonka tarkoitus on tuoda
+          kuluttajat ja lähituottajat yhteen.
+        </p>
 
-<div class="row">
-  <form id="rekForm">
-    <h4>Rekisteröidy käyttäjäksi</h4>
-    <div class="form-row">
-      <div class="form-group col-sm-6">
-        <label for="fname">Etunimi</label>
-        <input
-          id="fname"
-          name="fname"
-          placeholder="Etunimi"
-          type="text"
-          required="required"
-          class="form-control"
+        <p>
+          Pelkät luomutuotteet on helppo suodattaa näkymään, kun valitset
+          kategorian yläreunan LUOMU-suodattimen päälle. Luomutuotteet on
+          merkitty vihreällä LUOMU-merkillä. Tuoreiden luomutuotteiden ostaminen
+          ei ole koskaan ollut näin helppoa! Pelkät luomutuotteet on helppo
+          suodattaa näkymään, kun valitset kategorian yläreunan
+          LUOMU-suodattimen päälle. Luomutuotteet on merkitty vihreällä
+          LUOMU-merkillä.
+        </p>
+
+        <p>Mullistetaan yhdessä ruokailun kulttuuria.</p>
+
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum
+          distinctio impedit obcaecati quidem. Sint nostrum obcaecati quo
+          dolorem perspiciatis harum nobis, quia, dolor et ducimus, assumenda
+          ullam quaerat ipsum a.
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+          provident ex doloribus eligendi maxime facilis magni quis consequuntur
+          eaque eos?
+        </p>
+      </div>
+
+      <div class="col-md-4 d-flex flex-column mb-5">
+        <img
+          src="images/tuotteetMain.jpeg"
+          alt="ruokatori kauppatori"
+          class="main-1-kuva"
         />
       </div>
-      <div class="form-group col-sm-6">
-        <label for="sname">Sukunimi</label>
-        <input
-          id="sname"
-          name="sname"
-          placeholder="Sukunimi"
-          type="text"
-          required="required"
-          class="form-control"
-        />
-      </div>
     </div>
-    <div class="form-group col-sm-6">
-      <label for="age">Syntymäaika</label>
-      <input
-        id="age"
-        name="age"
-        placeholder="Syntymäaika"
-        type="text"
-        class="form-control"
-      />
+    <!--roww-->
+
+    <div>
+      <h2 style="margin: 50px">Paikkakuntasi: Helsinki</h2>
     </div>
-    <div class="form-group col-sm-6">
-      <label for="gender">Sukupuoli</label>
-      <div>
-        <div class="form-check form-check-inline">
-          <input
-            name="radio"
-            id="radio_0"
-            type="radio"
-            required="required"
-            class="form-check-input"
-            value="Nainen"
+  </div>
+</main>
+
+<section class="py-5">
+  <div class="container px-4 px-lg-5 mt-5">
+    <div
+      class="
+        row
+        gx-4 gx-lg-5
+        row-cols-2 row-cols-md-3 row-cols-xl-4
+        justify-content-center
+      "
+    >
+      <div class="col mb-5">
+        <div class="card h-100">
+          <img
+            class="card-img-top sl-image spot-image"
+            src="images/lammasreal.png"
+            alt="lihatuote"
           />
-          <label for="radio_0" class="form-check-label">Nainen</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input
-            name="radio"
-            id="radio_1"
-            type="radio"
-            required="required"
-            class="form-check-input"
-            value="Mies"
-          />
-          <label for="radio_1" class="form-check-label">Mies</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input
-            name="radio"
-            id="radio_2"
-            type="radio"
-            required="required"
-            class="form-check-input"
-            value="Muu"
-          />
-          <label for="radio_2" class="form-check-label">Muu</label>
+          <div class="card-body p-4">
+            <div class="text-center">
+              <h5 class="fw-bolder">Liha</h5>
+              <p>€3.99 - €20.00/Kg</p>
+            </div>
+          </div>
+
+          <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+            <div class="text-center">
+              <a class="btn btn-primary mt-auto mx-auto" href="#">Tilaa</a>
+            </div>
+          </div>
         </div>
       </div>
+
+      <div class="col mb-5">
+        <div class="card h-100">
+          <div
+            class="badge bg-dark text-white position-absolute"
+            style="top: 0.5rem; right: 0.5rem"
+          ></div>
+          <img
+            class="card-img-top sl-image spot-image"
+            src="images/kalatuote.jpeg"
+            alt="..."
+          />
+          <div class="card-body p-4">
+            <div class="text-center">
+              <h5 class="fw-bolder">Kala</h5>
+              <div
+                class="d-flex justify-content-center small text-warning mb-2"
+              >
+                <div class="bi-star-fill"></div>
+                <div class="bi-star-fill"></div>
+                <div class="bi-star-fill"></div>
+                <div class="bi-star-fill"></div>
+                <div class="bi-star-fill"></div>
+              </div>
+              <span class="text-muted text-decoration-line-through"></span>
+              <p>€4.99 - €20.00/Kg</p>
+            </div>
+          </div>
+          <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+            <div class="text-center">
+              <a class="btn btn-primary mt-auto mx-auto" href="#">Tilaa</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- col -->
+
+      <div class="col mb-5">
+        <div class="card h-100">
+          <div
+            class="badge bg-dark text-white position-absolute"
+            style="top: 0.5rem; right: 0.5rem"
+          >
+            Ale
+          </div>
+          <img
+            class="card-img-top sl-image spot-image"
+            src="images/leivonnaiset.jpeg"
+            alt="..."
+          />
+          <div class="card-body p-4">
+            <div class="text-center">
+              <h5 class="fw-bolder">Leivonnaiset</h5>
+              <div
+                class="d-flex justify-content-center small text-warning mb-2"
+              >
+                <div class="bi-star-fill"></div>
+                <div class="bi-star-fill"></div>
+                <div class="bi-star-fill"></div>
+                <div class="bi-star-fill"></div>
+                <div class="bi-star-fill"></div>
+              </div>
+              <span class="text-muted text-decoration-line-through"
+                >€10.00/kpl</span
+              >
+              <p>€8/kpl</p>
+            </div>
+          </div>
+          <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+            <div class="text-center">
+              <a class="btn btn-primary mt-auto mx-auto" href="#">Tilaa</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- col -->
+      <div class="col mb-5">
+        <div class="card h-100">
+          <div
+            class="badge bg-dark text-white position-absolute"
+            style="top: 0.5rem; right: 0.5rem"
+          ></div>
+          <img
+            class="card-img-top sl-image spot-image"
+            src="images/kuivatuotteet.jpeg"
+            alt="Pasta"
+          />
+          <div class="card-body p-4">
+            <div class="text-center">
+              <h5 class="fw-bolder">Kuivatuotteet</h5>
+              <div
+                class="d-flex justify-content-center small text-warning mb-2"
+              >
+                <div class="bi-star-fill"></div>
+                <div class="bi-star-fill"></div>
+                <div class="bi-star-fill"></div>
+                <div class="bi-star-fill"></div>
+                <div class="bi-star-fill"></div>
+              </div>
+              <span class="text-muted text-decoration-line-through"></span>
+              <p>€1.99 - €20.00/Kg</p>
+            </div>
+          </div>
+          <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+            <div class="text-center">
+              <a class="btn btn-primary mt-auto mx-auto" href="#">Tilaa</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- col -->
+      <div class="col mb-5">
+        <div class="card h-100">
+          <div
+            class="badge bg-dark text-white position-absolute"
+            style="top: 0.5rem; right: 0.5rem"
+          ></div>
+          <img
+            class="card-img-top sl-image spot-image"
+            src="images/juomat.jpeg"
+            alt="Juomat"
+          />
+          <div class="card-body p-4">
+            <div class="text-center">
+              <h5 class="fw-bolder">Juomat</h5>
+              <div
+                class="d-flex justify-content-center small text-warning mb-2"
+              >
+                <div class="bi-star-fill"></div>
+                <div class="bi-star-fill"></div>
+                <div class="bi-star-fill"></div>
+                <div class="bi-star-fill"></div>
+                <div class="bi-star-fill"></div>
+              </div>
+              <span class="text-muted text-decoration-line-through"></span>
+              <p>1.99 - 15€/l</p>
+            </div>
+          </div>
+          <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+            <div class="text-center">
+              <a class="btn btn-primary mt-auto mx-auto" href="#">Tilaa</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- col -->
+      <div class="col mb-5">
+        <div class="card h-100">
+          <div
+            class="badge bg-dark text-white position-absolute"
+            style="top: 0.5rem; right: 0.5rem"
+          ></div>
+          <img
+            class="card-img-top sl-image spot-image"
+            src="images/valmisruoka.jpeg"
+            alt="..."
+          />
+          <div class="card-body p-4">
+            <div class="text-center">
+              <h5 class="fw-bolder">Valmisruoat</h5>
+              <div
+                class="d-flex justify-content-center small text-warning mb-2"
+              >
+                <div class="bi-star-fill"></div>
+                <div class="bi-star-fill"></div>
+                <div class="bi-star-fill"></div>
+                <div class="bi-star-fill"></div>
+                <div class="bi-star-fill"></div>
+              </div>
+              <span class="text-muted text-decoration-line-through"></span>
+              <p>€4.99 - €20.00/Kg</p>
+            </div>
+          </div>
+          <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+            <div class="text-center">
+              <a class="btn btn-primary mt-auto mx-auto" href="#">Tilaa</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- col -->
+      <div class="col mb-5">
+        <div class="card h-100">
+          <div
+            class="badge bg-dark text-white position-absolute"
+            style="top: 0.5rem; right: 0.5rem"
+          ></div>
+          <img
+            class="card-img-top sl-image spot-image"
+            src="images/hedelmatvihannekset.jpeg"
+            alt="Vihanneksia"
+          />
+          <div class="card-body p-4">
+            <div class="text-center">
+              <h5 class="fw-bolder">Hedelmät ja vihannekset</h5>
+              <div
+                class="d-flex justify-content-center small text-warning mb-2"
+              >
+                <div class="bi-star-fill"></div>
+                <div class="bi-star-fill"></div>
+                <div class="bi-star-fill"></div>
+                <div class="bi-star-fill"></div>
+                <div class="bi-star-fill"></div>
+              </div>
+              <span class="text-muted text-decoration-line-through"></span>
+              <p>€4.99 - €20.00/Kg</p>
+            </div>
+          </div>
+          <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+            <div class="text-center">
+              <a class="btn btn-primary mt-auto mx-auto" href="#">Tilaa</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- col -->
+      <div class="col mb-5">
+        <div class="card h-100">
+          <div
+            class="badge bg-dark text-white position-absolute"
+            style="top: 0.5rem; right: 0.5rem"
+          ></div>
+          <img
+            class="card-img-top sl-image spot-image"
+            src="images/leipa.jpeg"
+            alt="Leipä"
+          />
+          <div class="card-body p-4">
+            <div class="text-center">
+              <h5 class="fw-bolder">Leipä</h5>
+              <div
+                class="d-flex justify-content-center small text-warning mb-2"
+              >
+                <div class="bi-star-fill"></div>
+                <div class="bi-star-fill"></div>
+                <div class="bi-star-fill"></div>
+                <div class="bi-star-fill"></div>
+                <div class="bi-star-fill"></div>
+              </div>
+              <span class="text-muted text-decoration-line-through"></span>
+              <p>€4.99 - €20.00/Kg</p>
+            </div>
+          </div>
+          <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+            <div class="text-center">
+              <a class="btn btn-primary mt-auto mx-auto" href="#">Tilaa</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- col -->
+      <div class="col mb-5">
+        <div class="card h-100">
+          <div
+            class="badge bg-dark text-white position-absolute"
+            style="top: 0.5rem; right: 0.5rem"
+          ></div>
+          <img
+            class="card-img-top sl-image spot-image"
+            src="images/maitotuotteet.jpeg"
+            alt="Juusto"
+          />
+          <div class="card-body p-4">
+            <div class="text-center">
+              <h5 class="fw-bolder">Maitotuotteet</h5>
+              <div
+                class="d-flex justify-content-center small text-warning mb-2"
+              >
+                <div class="bi-star-fill"></div>
+                <div class="bi-star-fill"></div>
+                <div class="bi-star-fill"></div>
+                <div class="bi-star-fill"></div>
+                <div class="bi-star-fill"></div>
+              </div>
+              <span class="text-muted text-decoration-line-through"></span>
+              <p>€4.99 - €20.00/Kg</p>
+            </div>
+          </div>
+          <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+            <div class="text-center">
+              <a class="btn btn-primary mt-auto mx-auto" href="#">Tilaa</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- col -->
+      <div class="col mb-5">
+        <div class="card h-100">
+          <div
+            class="badge bg-dark text-white position-absolute"
+            style="top: 0.5rem; right: 0.5rem"
+          ></div>
+          <img
+            class="card-img-top sl-image spot-image"
+            src="images/munat.jpeg"
+            alt="Munia"
+          />
+          <div class="card-body p-4">
+            <div class="text-center">
+              <h5 class="fw-bolder">Munat</h5>
+              <div
+                class="d-flex justify-content-center small text-warning mb-2"
+              >
+                <div class="bi-star-fill"></div>
+                <div class="bi-star-fill"></div>
+                <div class="bi-star-fill"></div>
+                <div class="bi-star-fill"></div>
+                <div class="bi-star-fill"></div>
+              </div>
+              <span class="text-muted text-decoration-line-through"></span>
+              <p>€4.99 - €20.00/Kg</p>
+            </div>
+          </div>
+          <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+            <div class="text-center">
+              <a class="btn btn-primary mt-auto mx-auto" href="#">Tilaa</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- col -->
+      <div class="col mb-5">
+        <div class="card h-100">
+          <div
+            class="badge bg-dark text-white position-absolute"
+            style="top: 0.5rem; right: 0.5rem"
+          ></div>
+          <img
+            class="card-img-top sl-image spot-image"
+            src="images/kausituotteet.jpeg"
+            alt="Kurpitsat"
+          />
+          <div class="card-body p-4">
+            <div class="text-center">
+              <h5 class="fw-bolder">Kausituotteet</h5>
+              <div
+                class="d-flex justify-content-center small text-warning mb-2"
+              >
+                <div class="bi-star-fill"></div>
+                <div class="bi-star-fill"></div>
+                <div class="bi-star-fill"></div>
+                <div class="bi-star-fill"></div>
+                <div class="bi-star-fill"></div>
+              </div>
+              <span class="text-muted text-decoration-line-through"></span>
+              <p>€4.99 - €20.00/Kg</p>
+            </div>
+          </div>
+          <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+            <div class="text-center">
+              <a class="btn btn-primary mt-auto mx-auto" href="#">Tilaa</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- col -->
+      <div class="col mb-5">
+        <div class="card h-100">
+          <div
+            class="badge bg-dark text-white position-absolute"
+            style="top: 0.5rem; right: 0.5rem"
+          ></div>
+          <img
+            class="card-img-top sl-image spot-image"
+            src="images/luomu.jpeg"
+            alt="Luomuomena"
+          />
+          <div class="card-body p-4">
+            <div class="text-center">
+              <h5 class="fw-bolder">Luomu</h5>
+              <div
+                class="d-flex justify-content-center small text-warning mb-2"
+              >
+                <div class="bi-star-fill"></div>
+                <div class="bi-star-fill"></div>
+                <div class="bi-star-fill"></div>
+                <div class="bi-star-fill"></div>
+                <div class="bi-star-fill"></div>
+              </div>
+              <span class="text-muted text-decoration-line-through"></span>
+              <p>€4.99 - €20.00/Kg</p>
+            </div>
+          </div>
+          <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+            <div class="text-center">
+              <a class="btn btn-primary mt-auto mx-auto" href="#">Tilaa</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- col -->
     </div>
-    <div class="form-group col-sm-6">
-      <label for="email">Email</label>
-      <input
-        id="email"
-        name="email"
-        placeholder="sähköposti"
-        type="text"
-        required="required"
-        class="form-control"
-      />
-    </div>
-    <div class="form-group col-sm-6">
-      <label for="userID">Käyttäjätunnus</label>
-      <input
-        id="userID"
-        name="userID"
-        placeholder="Käyttäjätunnus"
-        type="text"
-        required="required"
-        class="form-control"
-      />
-    </div>
-    <div class="form-group col-sm-6">
-      <label for="password">Salasana</label>
-      <input
-        id="password"
-        name="password"
-        placeholder="Salasana"
-        type="text"
-        required="required"
-        class="form-control"
-      />
-    </div>
-    <div class="form-group">
-      <button name="submit" type="submit" class="btn btn-primary">
-        Submit
-      </button>
-    </div>
-  </form>
-</div>
+  </div>
+</section>
