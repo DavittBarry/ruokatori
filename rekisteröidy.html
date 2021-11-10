@@ -1,310 +1,343 @@
 <!DOCTYPE html>
 <html lang="fi">
-<head>
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="vendor/bootstrap-5.1.1-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="vendor/bootstrap-5.1.1-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Ruokatori - Rekisteröidy</title>
-</head>
-
-<body>
-  <div class="container-fluid max-width d-flex justify-content-between align-items-start">
-    <button type="button" id="menuBtn" class="d-md-none">
+  </head>
+  <body>
+    <div
+      class="
+        container-fluid
+        max-width
+        d-flex
+        justify-content-between
+        align-items-start
+      "
+    >
       <div class="menu-btn-icon">
-        <span class="menu-btn-bar"></span>
-        <span class="menu-btn-bar"></span>
-        <span class="menu-btn-bar"></span>
-        <span class="menu-btn-bar"></span>
+        <button type="button" id="menuBtn" class="d-md-none">
+          <!-- Voisi olla myös divei -->
+          <span class="menu-btn-bar"></span>
+          <span class="menu-btn-bar"></span>
+          <span class="menu-btn-bar"></span>
+          <span class="menu-btn-bar"></span>
+        </button>
       </div>
-        <span class="visually-hidden">Toggle menu</span>
-    </button>
-  </div>
-<header>
-  <nav class="navbar navbar-expand-md navbar-dark bg-primary">
-    <div class="container-fluid max-width">
-      <ul class="navbar-nav justify-content-between w-100">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">Etusivu</a>
-        </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="tuotteet.html">Tuotteet</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="tuottajat.html">Tuottajat</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="uutiset.html">Uutiset</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="yhteystiedot.html">Yhteystiedot</a>
-        </li>
-        
-        <div class="navbar-nav justify-content-end">
-        <li class="nav-item">
-          <a class="nav-link" href="kirjaudu.html">Kirjaudu sisään</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="rekisteröidy.html">Rekisteröidy</a>
-        </li>
-      </div>
-      </ul>
-        <!-- /div -->
+      <span class="visually-hidden">Toggle menu</span>
     </div>
-      <!-- /.container-fluid -->
-  </nav>
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-gradient">
+      <div class="container-fluid max-width">
+        <!-- button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button -->
+        <!-- div class="collapse navbar-collapse" id="navbarNav" -->
 
-  <div id="mainCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+        <ul class="navbar-nav justify-content-between w-100">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Etusivu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tuotteet.html">Tuotteet</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tuottajat.html">Tuottajat</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="uutiset.html">Uutiset</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="yhteystiedot.html">Yhteystiedot</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="kirjaudu.html">Kirjaudu sisään</a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="rekisteröidy.html"
+              >Rekisteröidy</a
+            >
+          </li>
+        </ul>
+        <!-- /div -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+    <div id="mainCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
       <div class="carousel-indicators">
-          <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button
+          type="button"
+          data-bs-target="#mainCarousel"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#mainCarousel"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#mainCarousel"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
       </div>
 
       <div class="carousel-inner">
-
         <div class="carousel-item active">
-          <div class="carousel-img" style="background-image: url(images/carousel1.jpeg)"></div>
-          <div class="carousel-caption"> Ruokatori <br />
-            <div class="carousel-caption-under"> Ravintoa suoraan tuottajilta </div>
+          <div
+            class="carousel-img"
+            style="background-image: url(images/carousel1.jpeg)"
+          ></div>
+          <div class="carousel-caption">
+            Ruokatori <br />
+            <div class="carousel-caption-under">
+              Ravintoa suoraan tuottajilta
+            </div>
           </div>
         </div>
 
         <div class="carousel-item">
-          <div class="carousel-img" style="background-image: url(images/carousel2.jpeg)"></div>
-          <div class="carousel-caption"> Ruokatori <br />
-            <div class="carousel-caption-under"> Ravintoa suoraan tuottajilta </div>
+          <div
+            class="carousel-img"
+            style="background-image: url(images/carousel2.jpeg)"
+          ></div>
+          <div class="carousel-caption">
+            Ruokatori <br />
+            <div class="carousel-caption-under">
+              Ravintoa suoraan tuottajilta
+            </div>
           </div>
         </div>
 
         <div class="carousel-item">
-          <div class="carousel-img" style="background-image: url(images/carousel4.jpeg)"></div>
-          <div class="carousel-caption"> Ruokatori <br />
-            <div class="carousel-caption-under"> Ravintoa suoraan tuottajilta </div>
+          <div
+            class="carousel-img"
+            style="background-image: url(images/carousel4.jpeg)"
+          ></div>
+          <div class="carousel-caption">
+            Ruokatori <br />
+            <div class="carousel-caption-under">
+              Ravintoa suoraan tuottajilta
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#mainCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#mainCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Main Carousel -->
+
+    <div class="d-flex justify-content-center">
+      <h1>Tervetuloa Ruokatoriin!</h1>
+    </div>
+    <div id="formDiv">
+      <h4>Rekisteröidy käyttäjäksi</h4>
+
+      <form id="rekForm">
+        <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+          <div class="container h-100">
+            <div
+              class="row d-flex justify-content-center align-items-center h-100"
+            >
+              <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                <div
+                  class="card"
+                  style="border-radius: 15px; margin-bottom: 3rem"
+                >
+                  <div class="card-body p-5">
+                    <h2 class="text-uppercase text-center mb-5">
+                      Luo käyttäjätunnus
+                    </h2>
+
+                    <form>
+                      <div class="form-outline mb-4">
+                        <label class="form-label" for="name">Nimi</label>
+                        <input
+                          type="text"
+                          id="name"
+                          class="form-control form-control-lg"
+                        />
+                      </div>
+
+                      <div class="form-outline mb-4">
+                        <label class="form-label" for="email">Sähköposti</label>
+                        <input
+                          type="email"
+                          id="email"
+                          class="form-control form-control-lg"
+                        />
+                      </div>
+
+                      <div class="form-outline mb-4">
+                        <label class="form-label" for="password"
+                          >Salasana</label
+                        >
+                        <input
+                          type="password"
+                          id="password"
+                          class="form-control form-control-lg"
+                        />
+                      </div>
+
+                      <div class="form-outline mb-4">
+                        <label class="form-label" for="password2nd"
+                          >Toista salasana</label
+                        >
+                        <input
+                          type="password"
+                          id="password2nd"
+                          class="form-control form-control-lg"
+                        />
+                      </div>
+
+                      <div
+                        class="form-check d-flex justify-content-center mb-5"
+                      >
+                        <input
+                          class="form-check-input me-2"
+                          type="checkbox"
+                          value=""
+                          id="form2Example3cg"
+                        />
+                        <label class="form-check-label" for="form2Example3g">
+                          I agree all statements in
+                          <a href="#" class="text-body"
+                            ><u>Terms of service</u></a
+                          >
+                        </label>
+                      </div>
+
+                      <div class="d-flex justify-content-center">
+                        <button
+                          type="button"
+                          class="
+                            btn btn-success btn-block btn-lg
+                            gradient-custom-4
+                            text-body
+                          "
+                        >
+                          Rekisteröidy
+                        </button>
+                      </div>
+
+                      <p class="text-center text-muted mt-5 mb-0">
+                        Onko sinulla jo käyttäjä?
+                        <a href="kirjaudu.html" class="fw-bold text-body"
+                          ><u>Kirjaudu tästä</u></a
+                        >
+                      </p>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <footer class="bg-primary text-center py-4">
+      <div class="container-fluid max-width">
+        <div class="row">
+          <div class="col-md text-md-start">
+            <h3 class="text-white">Yhteystiedot</h3>
+            <address>
+              Ruokatorikatu 4<br />
+              00100 Helsinki<br />
+              Finland<br />
+              <br />
+              Tel. +358 40 123 1234<br />
+              Email: ruokatori@info.com
+            </address>
+          </div>
+          <div class="col-md text-md-end">
+            <ul class="list-unstyled">
+              <li><a href="index.html">Etusivu</a></li>
+              <li><a href="tuotteet.html"> Tuotteet</a></li>
+              <li><a href="tuottajat.html">Tuottajat</a></li>
+              <li><a href="uutiset.html">Uutiset</a></li>
+              <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+            </ul>
           </div>
         </div>
         <!--row-->
         <ul class="list-inline">
           <li class="list-inline-item">
-            <a href="/https:/www.facebook.com" target="_blank"><img src="images/icon-facebook.svg" width="48" height="48" alt="Facebook"/></a>
+            <a href="/https:/www.facebook.com" target="_blank"
+              ><img
+                src="images/icon-facebook.svg"
+                width="48"
+                height="48"
+                alt="Facebook"
+            /></a>
           </li>
           <li class="list-inline-item">
-            <a href="https://www.instagram.com/ruokatori/" target="_blank"><img src="images/icon-instagram.svg" width="48" height="48" alt="Instagram"/></a>
+            <a href="https://www.instagram.com/ruokatori/" target="_blank"
+              ><img
+                src="images/icon-instagram.svg"
+                width="48"
+                height="48"
+                alt="Instagram"
+            /></a>
           </li>
           <li class="list-inline-item">
-            <a href="/https:/www.twitter.com" target="_blank"><img src="images/icon-twitter.svg" width="48" height="48" alt="Twitter" /></a>
+            <a href="/https:/www.twitter.com" target="_blank"
+              ><img
+                src="images/icon-twitter.svg"
+                width="48"
+                height="48"
+                alt="Twitter"
+            /></a>
           </li>
           <li class="list-inline-item">
-            <a href="https://www.youtube.com/channel/UCPjRCb84wWfdjxRUz0xOVmA" target="_blank"><img src="images/icon-youtube.svg" width="48" height="48" alt="Pinterest"/></a>
+            <a
+              href="https://www.youtube.com/channel/UCPjRCb84wWfdjxRUz0xOVmA"
+              target="_blank"
+              ><img
+                src="images/icon-youtube.svg"
+                width="48"
+                height="48"
+                alt="Pinterest"
+            /></a>
           </li>
         </ul>
       </div>
+      <!--container fluid-->
+    </footer>
 
-      <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-
-      <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-
-  </div>
-  <!-- Main Carousel -->
-</header>
-
-<main>
-  <div class="container-fluid max-width">
-    <div class="justify-content-center">
-      <div class="row">
-        <form id="rekForm">
-        <h4>Rekisteröidy käyttäjäksi</h4>
-        <div class="form-row">
-          <div class="form-group col-sm-6">
-            <label for="fname">Etunimi</label>
-            <input id="fname" name="fname" placeholder="Etunimi" type="text" required="required" class="form-control" />
-          </div>
-          <div class="form-group col-sm-6">
-            <label for="sname">Sukunimi</label>
-            <input id="sname" name="sname" placeholder="Sukunimi" type="text" required="required" class="form-control"/>
-        </div>
-        </div>
-
-    <div class="form-group col-sm-6">
-      <label for="age">Syntymäaika</label>
-      <input
-        id="age"
-        name="age"
-        placeholder="Syntymäaika"
-        type="text"
-        class="form-control"
-      />
-    </div>
-    <div class="form-group col-sm-6">
-      <label for="gender">Sukupuoli</label>
-      <div>
-        <div class="form-check form-check-inline">
-          <input
-            name="radio"
-            id="radio_0"
-            type="radio"
-            required="required"
-            class="form-check-input"
-            value="Nainen"
-          />
-          <label for="radio_0" class="form-check-label">Nainen</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input
-            name="radio"
-            id="radio_1"
-            type="radio"
-            required="required"
-            class="form-check-input"
-            value="Mies"
-          />
-          <label for="radio_1" class="form-check-label">Mies</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input
-            name="radio"
-            id="radio_2"
-            type="radio"
-            required="required"
-            class="form-check-input"
-            value="Muu"
-          />
-          <label for="radio_2" class="form-check-label">Muu</label>
-        </div>
-      </div>
-    </div>
-    <div class="form-group col-sm-6">
-      <label for="email">Email</label>
-      <input
-        id="email"
-        name="email"
-        placeholder="sähköposti"
-        type="text"
-        required="required"
-        class="form-control"
-      />
-    </div>
-    <div class="form-group col-sm-6">
-      <label for="userID">Käyttäjätunnus</label>
-      <input
-        id="userID"
-        name="userID"
-        placeholder="Käyttäjätunnus"
-        type="text"
-        required="required"
-        class="form-control"
-      />
-    </div>
-    <div class="form-group col-sm-6">
-      <label for="password">Salasana</label>
-      <input
-        id="password"
-        name="password"
-        placeholder="Salasana"
-        type="text"
-        required="required"
-        class="form-control"
-      />
-    </div>
-    <div class="form-group">
-      <button name="submit" type="submit" class="btn btn-primary">
-        Submit
-      </button>
-    </div>
-  </form>
-</div>
-</div>
-  </div>
-  <!-- container-fluid-->
-</main>
-
-<footer class="bg-primary text-center py-4">
-  <div class="container-fluid max-width">
-    <div class="row">
-      <div class="col-md text-md-start">
-        <h3 class="text-white">Yhteystiedot</h3>
-        <address>
-        Ruokatorikatu 4<br />
-        00100 Helsinki<br />
-        Finland<br />
-        <br />
-        Tel. +358 40 123 1234<br />
-        Email: ruokatori@info.com
-        </address>
-      </div>
-      <div class="col-md text-md-end">
-        <ul class="list-unstyled">
-          <li><a href="#">Etusivu</a></li>
-          <li><a href="#"> Tuotteet</a></li>
-          <li><a href="#">Tuottajat</a></li>
-          <li><a href="#">Uutiset</a></li>
-          <li><a href="#">Yhteystiedot</a></li>
-        </ul>
-      </div>
-    </div>
-    <!--row-->
-      <ul class="list-inline">
-        <li class="list-inline-item">
-          <a href="#" target="_blank" class="facebook"
-            ><ion-icon
-              name="logo-facebook"
-              class="ionicon faceicon"
-            ></ion-icon
-          ></a>
-        </li>
-  
-        <li class="list-inline-item">
-          <a href="https://www.instagram.com/ruokatori/" target="_blank"
-            ><ion-icon
-              name="logo-instagram"
-              class="ionicon instaicon"
-            ></ion-icon
-          ></a>
-        </li>
-        <li class="list-inline-item">
-          <a href="/https:/www.twitter.com" target="_blank"
-            ><ion-icon
-              name="logo-twitter"
-              class="ionicon twittericon"
-            ></ion-icon
-          ></a>
-        </li>
-        <li class="list-inline-item">
-          <a
-            href="https://www.youtube.com/channel/UCPjRCb84wWfdjxRUz0xOVmA"
-            target="_blank"
-            ><ion-icon
-              name="logo-youtube"
-              class="ionicon youtubeicon"
-            ></ion-icon
-          ></a>
-        </li>
-      </ul>
-  </div>
-  <!--container fluid-->
-</footer>
-    <script src="vendor/bootstrap-5.1.1-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/bootstrap-5.1.1-dist/js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
   </body>
 </html>
