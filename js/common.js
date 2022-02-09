@@ -6,7 +6,7 @@ menuBtn.onclick = function () {
   document.body.classList.toggle('menu-open');
 };
 
-// Log in system's basic setup. First declare JavaScrip div ids:
+// Log in system's basic setup. First declare JavaScrip div
 
 const loginForm = document.getElementById("login-form");
 const loginButton = document.getElementById("login-form-submit");
