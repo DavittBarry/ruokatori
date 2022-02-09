@@ -2,56 +2,48 @@
 
 @font-face {
   font-family: 'Courier';
-  src: url(https://github.com/DavittBarry/ruokatori/blob/main/css/fonts/courier_prime.woff2)
-      format('woff2'),
-    url(https://github.com/DavittBarry/ruokatori/blob/main/css/fonts/courier_prime.woff)
-      format('woff');
+  src: url(/css/fonts/courier_prime.woff2) format('woff2'),
+    url(/css/fonts/courier_prime.woff) format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Raleway';
-  src: url(https://github.com/DavittBarry/ruokatori/blob/main/css/fonts/raleway-medium.woff2)
-      format('woff2'),
-    url(https://github.com/DavittBarry/ruokatori/blob/main/css/fonts/raleway-medium.woff)
-      format('woff');
+  src: url(/css/fonts/raleway-medium.woff2) format('woff2'),
+    url(/css/fonts/raleway-medium.woff) format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Raleway';
-  src: url(https://github.com/DavittBarry/ruokatori/blob/main/css/fonts/raleway-mediumitalic.woff2)
-      format('woff2'),
-    url(https://github.com/DavittBarry/ruokatori/blob/main/css/fonts/raleway-mediumitalic.woff)
-      format('woff');
+  src: url(/css/fonts/raleway-mediumitalic.woff2) format('woff2'),
+    url(/css/fonts/raleway-mediumitalic.woff) format('woff');
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Raleway';
-  src: url(https://github.com/DavittBarry/ruokatori/blob/main/css/fonts/raleway-light.woff2)
-      format('woff2'),
-    url(https://github.com/DavittBarry/ruokatori/blob/main/css/fonts/raleway-light.woff)
-      format('woff');
-  font-weight: 200;
+  src: url(/css/fonts/raleway-light.woff2) format('woff2'),
+    url(/css/fonts/raleway-light.woff) format('woff');
+  font-weight: lighter;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Raleway';
-  src: url(fonts/raleway-bold.woff2) format('woff2'),
-    url(fonts/raleway-bold.woff) format('woff');
+  src: url(/css/fonts/raleway-bold.woff2) format('woff2'),
+    url(/css/fonts/raleway-bold.woff) format('woff');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url(fonts/montserratalternates-bold.woff2) format('woff2'),
-    url(fonts/montserratalternates-bold.woff) format('woff');
+  src: url(/css/fonts/montserratalternates-bold.woff2) format('woff2'),
+    url(/css/fonts/montserratalternates-bold.woff) format('woff');
   font-weight: bold;
   font-style: normal;
 }
@@ -61,7 +53,7 @@
 :root {
   --bs-blue: #1a5dad;
   --bs-primary: #1a5dad;
-  --bs-primary-rgb: 56, 167, 0;
+  --bs-primary-rgb: 161, 197, 165;
 }
 
 /* .bg-gradient {
@@ -71,10 +63,12 @@
 /* ELEMENTS */
 
 body {
-  background-color: #fefffd;
+  background-color: #fff;
   color: #fff;
-  font-family: 'courier';
+  font-family: 'courier', 'sans-serif';
 }
+
+
 
 body.menu-open {
   /* Estää pystysuuntaisen skrollaamisen, jos menu on auki*/
@@ -82,7 +76,10 @@ body.menu-open {
 }
 
 p {
+  font-family: 'Raleway', 'sans-serif';
   color: #000;
+  font-weight:500;
+
 }
 
 a {
@@ -106,9 +103,10 @@ h3,
 h4,
 h5,
 h6 {
-  color: #38b000;
+  color: #0aff37;
   font-family: 'Raleway', 'sans-serif';
   font-weight: bold;
+  /*  text-shadow: 0 0 2px #0aff37; */
 }
 
 h2,
@@ -159,7 +157,7 @@ footer a:active {
 .btn,
 .form-control {
   padding: 0.5rem 0.75rem;
-  border-radius: 50px;
+  border-radius: 50;
 }
 
 .card-image img {
@@ -207,7 +205,7 @@ body.menu-open .navbar {
 }
 
 .navbar-nav .nav-link {
-  font-family: 'Raleway';
+  font-family: 'Raleway', 'sans-serif';
   font-size: 2.5rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -217,7 +215,6 @@ body.menu-open .navbar {
 
 .navbar-nav .nav-link:hover {
   text-decoration: none;
-  background-color: #28434a;
 }
 
 .carousel-indicators [data-bs-target] {
@@ -238,7 +235,7 @@ body.menu-open .navbar {
   bottom: auto; /* Keskitetään karusellin teksti*/
   top: 50%; /* Keskitetään karusellin teksti*/
   transform: translateY(-50%); /* Keskitetään karusellin teksti*/
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', 'sans-serif';
   color: #0aff37;
   font-size: 7rem;
   text-shadow: 0 0 10px rgb(85, 83, 83);
@@ -246,30 +243,8 @@ body.menu-open .navbar {
 }
 
 .carousel-caption-under {
-  font-family: 'Raleway';
+  font-family: 'Raleway', 'Sans-serif';
   font-size: 3rem;
-}
-
-/* ICON HOVERS */
-.ionicon {
-  width: 48px;
-  height: 48px;
-}
-
-.faceicon:hover {
-  color: #1a5dad;
-}
-
-.instaicon:hover {
-  color: #c92fa5;
-}
-
-.twittericon:hover {
-  color: #1c9ceb;
-}
-
-.youtubeicon:hover {
-  color: #ff0000;
 }
 
 /* ID:S */
@@ -359,7 +334,7 @@ body.menu-open #menuBtn .menu-btn-bar:nth-child(3) {
     top: 50%; /* Keskitetään karusellin teksti*/
     transform: translateY(-50%); /* Keskitetään karusellin teksti*/
     font-family: 'Montserrat', 'sans-serif';
-    color: #ffe963;
+    color: #e1ff5c;
     font-size: 2rem;
     text-shadow: 0 0 10px rgb(85, 83, 83);
     line-height: 1.25;
@@ -386,7 +361,7 @@ body.menu-open #menuBtn .menu-btn-bar:nth-child(3) {
     bottom: auto; /* Keskitetään karusellin teksti*/
     top: 50%; /* Keskitetään karusellin teksti*/
     transform: translateY(-50%); /* Keskitetään karusellin teksti*/
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', 'sans-serif';
     color: #e1ff5c;
     font-size: 3rem;
     text-shadow: 0 0 10px rgb(85, 83, 83);
@@ -394,7 +369,7 @@ body.menu-open #menuBtn .menu-btn-bar:nth-child(3) {
   }
 
   .carousel-caption-under {
-    font-family: 'Raleway';
+    font-family: 'Raleway', 'Sans-serif';
     font-size: 1.5rem;
   }
 }
@@ -404,7 +379,7 @@ body.menu-open #menuBtn .menu-btn-bar:nth-child(3) {
     bottom: auto; /* Keskitetään karusellin teksti*/
     top: 50%; /* Keskitetään karusellin teksti*/
     transform: translateY(-50%); /* Keskitetään karusellin teksti*/
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', 'sans-serif';
     color: #e1ff5c;
     font-size: 5rem;
     text-shadow: 0 0 10px rgb(85, 83, 83);
@@ -412,7 +387,7 @@ body.menu-open #menuBtn .menu-btn-bar:nth-child(3) {
   }
 
   .carousel-caption-under {
-    font-family: 'Raleway';
+    font-family: 'Raleway', 'Sans-serif';
     font-size: 1.5rem;
   }
 }
@@ -472,7 +447,7 @@ body.menu-open #menuBtn .menu-btn-bar:nth-child(3) {
     bottom: auto; /* Keskitetään karusellin teksti*/
     top: 50%; /* Keskitetään karusellin teksti*/
     transform: translateY(-50%); /* Keskitetään karusellin teksti*/
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', 'sans-serif';
     color: #e1ff5c;
     font-size: 9rem;
     text-shadow: 0 0 10px rgb(85, 83, 83);
@@ -480,29 +455,63 @@ body.menu-open #menuBtn .menu-btn-bar:nth-child(3) {
   }
 
   .carousel-caption-under {
-    font-family: 'Raleway';
+    font-family: 'Raleway', 'Sans-serif';
     font-size: 3rem;
   }
 }
 
-#formDiv {
-  display: block;
-  text-align: center;
-}
-
-#rekForm {
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: left;
-  color: #000;
-}
-
-#rekForm div {
-  padding-top: 1rem;
+#login-error-msg-holder {
   width: 100%;
+  height: 100%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+#login-error-msg {
+  width: 23%;
+  text-align: center;
+  margin: 0;
+  padding: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #8a0000;
+  border: 1px solid #8a0000;
+  background-color: #e58f8f;
+  opacity: 0;
 }
 
-#rekForm button {
-  margin-bottom: 3rem;
+#error-msg-second-line {
+  display: block;
+}
+
+#login-form {
+  align-self: flex-start;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.login-form-field::placeholder {
+  color: #3a3a3a;
+}
+
+.login-form-field {
+  border: none;
+  border-bottom: 1px solid #3a3a3a;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  outline: none;
+  padding: 0px 0px 5px 5px;
+}
+
+#login-form-submit {
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  background-color: #3a3a3a;
+  cursor: pointer;
+  outline: none;
 }
