@@ -68,8 +68,6 @@ body {
   font-family: 'courier', 'sans-serif';
 }
 
-
-
 body.menu-open {
   /* Estää pystysuuntaisen skrollaamisen, jos menu on auki*/
   overflow-y: hidden;
@@ -78,8 +76,7 @@ body.menu-open {
 p {
   font-family: 'Raleway', 'sans-serif';
   color: #000;
-  font-weight:500;
-
+  font-weight: 500;
 }
 
 a {
@@ -245,6 +242,28 @@ body.menu-open .navbar {
 .carousel-caption-under {
   font-family: 'Raleway', 'Sans-serif';
   font-size: 3rem;
+}
+
+/* ICON HOVERS */
+.ionicon {
+  width: 48px;
+  height: 48px;
+}
+
+.faceicon:hover {
+  color: #1a5dad;
+}
+
+.instaicon:hover {
+  color: #c92fa5;
+}
+
+.twittericon:hover {
+  color: #1c9ceb;
+}
+
+.youtubeicon:hover {
+  color: #ff0000;
 }
 
 /* ID:S */
